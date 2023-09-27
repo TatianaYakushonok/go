@@ -1,8 +1,3 @@
-.list {
-  list-style: none;
-  padding-left: 0;
-}
-
 .item {
   position: relative;
   background-color: #fff;
@@ -30,9 +25,9 @@
 }
 
 .item:nth-child(odd)::after {
-  background: url('./img/open-purple.svg') center/cover no-repeat;
+  background: url('../img/open-purple.svg') center/cover no-repeat;
 }
 
 .item:nth-child(even)::after {
-  background: url('./img/open.svg') center/cover no-repeat;
+  background: url('../img/open.svg') center/cover no-repeat;
 }

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/svg+xml" href="img/logo.svg">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="styles/index.css">
   <title>Document</title>
 </head>
 <body>
@@ -70,17 +70,25 @@
       </section>
 
       <section id="halls">
-        <h2>Наши залы</h2>
-        <ol>
-          <li><a href="vibes.html">80's vibes</a></li>
-          <li><a href="starwars.html">Star wars</a></li>
-          <li><a href="wildwest.html">Wild west</a></li>
-          <li><a href="neon.html">Neon style</a></li>
+        <h2 class="section-title">Наши залы</h2>
+        <ol class="halls-list">
+          <li class="halls-item">
+            <a class="halls-link" href="vibes.html"><span>80's <br> vibes</span></a>
+          </li>
+          <li class="halls-item">
+            <a class="halls-link" href="starwars.html"><span>Star <br> wars</span></a>
+          </li>
+          <li class="halls-item">
+            <a class="halls-link" href="wildwest.html"><span>Wild <br> west</span></a>
+          </li>
+          <li class="halls-item">
+            <a class="halls-link" href="neon.html"><span>Neon <br> style</span></a>
+          </li>
         </ol>
       </section>
 
       <section id="booking">
-        <h2>Забронировать зал просто</h2>
+        <h2 class="section-title">Забронировать зал просто</h2>
         <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
           <fieldset>
             <legend>Выбери зал</legend>
@@ -178,7 +186,7 @@
       </section>
 
       <section id="about">
-        <h2>О нас</h2>
+        <h2 class="section-title">О нас</h2>
         <p>Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в центральной части города.</p>
         <p>Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
         <blockquote class="blockquote">
@@ -188,7 +196,7 @@
       </section>
 
       <section id="reviews">
-        <h2>Отзывы посетителей</h2>
+        <h2 class="section-title">Отзывы посетителей</h2>
 
         <ul>
           <li>
@@ -216,7 +224,7 @@
       </section>
 
       <section>
-        <h2>Частые вопросы</h2>
+        <h2 class="section-title">Частые вопросы</h2>
 
         <ul class="list">
           <li class="item">Можно ли забронировать комнату онлайн?</li>
@@ -229,7 +237,7 @@
     </main>
 
     <footer id="contacts">
-      <h2>Контакты</h2>
+      <h2 class="section-title">Контакты</h2>
       <p>г. Москва ул. Аквамарина, 16</p>
       <p>
         <a href="tel:89509302893">8(950)930-28-93</a>
