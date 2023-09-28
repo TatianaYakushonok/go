@@ -22,6 +22,12 @@ ul {
   padding-left: 0;
 }
 
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
 .wrapper {
   width: 1200px;
   padding: 30px;
@@ -34,52 +40,4 @@ ul {
   font-weight: 700;
   line-height: 125%;
   text-transform: uppercase;
-}
-
-.blockquote-text {
-  font-size: 44px;
-  font-weight: 400;
-  line-height: 113.636%;
-  text-transform: uppercase;
-}
-
-.blockquote-text::before {
-  content: '\201C';
-  margin-right: 32px;
-  font-weight: 900;
-  line-height: 50px;
-  color: #6C0287;
-  text-transform: uppercase;
-}
-
-.blockquote-text::after {
-  content: '\201D';
-  margin-left: 32px;
-  font-weight: 900;
-  line-height: 50px;
-  color: #6C0287;
-  text-transform: uppercase;
-}
-
-.blockquote-author {
-  display: inline-block;
-  margin-left: 665px;
-}
-
-.blockquote-author > span {
-  display: inline-block;
-  max-width: 279.282px;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 140%;
-}
-
-.blockquote-author::before {
-  content: '';
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-  margin-right: 29px;
-  border-radius: 50%;
-  background: url('../img/abakshin.jpeg') right top -10px/cover no-repeat;
 }
