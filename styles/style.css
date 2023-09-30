@@ -14,7 +14,7 @@ body {
   overflow-x: hidden;
   min-width: 320px;
   min-height: 100vh;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -22,7 +22,7 @@ body {
   -webkit-tap-highlight-color: transparent;
   font-size: 20px;
   font-weight: 400;
-  line-height: 140%;
+  line-height: 1.4;
   color: #fff;
   background-color: #1b1a1b;
 }
@@ -85,6 +85,6 @@ iframe {
   font-size: 40px;
   text-align: center;
   font-weight: 700;
-  line-height: 125%;
+  line-height: 1.25;
   text-transform: uppercase;
 }

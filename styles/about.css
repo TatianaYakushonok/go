@@ -1,31 +1,39 @@
+.blockquote {
+  margin: 0;
+}
+
 .blockquote-text {
   font-size: 44px;
   font-weight: 400;
-  line-height: 113.636%;
+  line-height: 1.13636;
+  text-transform: uppercase;
+}
+
+.blockquote-text span {
+  padding-left: 55px;
+}
+
+.blockquote-text::before,
+.blockquote-text::after {
+  font-weight: 900;
+  line-height: 1.13636;
+  color: #6C0287;
   text-transform: uppercase;
 }
 
 .blockquote-text::before {
   content: '\201C';
   margin-right: 32px;
-  font-weight: 900;
-  line-height: 50px;
-  color: #6C0287;
-  text-transform: uppercase;
 }
 
 .blockquote-text::after {
   content: '\201D';
   margin-left: 32px;
-  font-weight: 900;
-  line-height: 50px;
-  color: #6C0287;
-  text-transform: uppercase;
 }
 
 .blockquote-author {
-  display: inline-block;
-  margin-left: 665px;
+  display: block;
+  float: right;
 }
 
 .blockquote-author > span {
@@ -33,7 +41,7 @@
   max-width: 279.282px;
   font-size: 20px;
   font-weight: 400;
-  line-height: 140%;
+  line-height: 1.4;
 }
 
 .blockquote-author::before {
