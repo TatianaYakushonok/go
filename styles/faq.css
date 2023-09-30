@@ -1,26 +1,26 @@
 .item {
   position: relative;
-  background-color: #fff;
-  color: #1c1f1a;
-  font-weight: 700;
-  font-size: 24px;
   padding: 30px 70px;
   margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1c1f1a;
+  background-color: #fff;
 }
 
 .item:nth-child(even) {
-  background-color: #440f51;
   color: #fff;
+  background-color: #440f51;
 }
 
 .item::after {
-  content: '';
-  width: 46px;
-  height: 46px;
-  display: inline-block;
   position: absolute;
   top: 50%;
   left: 90%;
+  display: inline-block;
+  content: '';
+  width: 46px;
+  height: 46px;
   transform: translateY(-50%);
 }
 
