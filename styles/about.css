@@ -5,22 +5,22 @@
   text-transform: uppercase;
 }
 
-.blockquote-text::before {
-  content: '\201C';
-  margin-right: 32px;
+.blockquote-text::before,
+.blockquote-text::after {
   font-weight: 900;
   line-height: 1.13636;
   color: #6C0287;
   text-transform: uppercase;
 }
 
+.blockquote-text::before {
+  content: '\201C';
+  margin-right: 32px;
+}
+
 .blockquote-text::after {
   content: '\201D';
   margin-left: 32px;
-  font-weight: 900;
-  line-height: 1.13636;
-  color: #6C0287;
-  text-transform: uppercase;
 }
 
 .blockquote-author {
