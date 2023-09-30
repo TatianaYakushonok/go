@@ -4,7 +4,7 @@
   height: 762px;
   margin-top: -160px;
   display: inline-block;
-  background: url('../img/vr.png') right 90px top 40px /contain no-repeat;
+  background: url('../img/vr.png') right -5px top 0/contain no-repeat;
 }
 
 .promo-title {
