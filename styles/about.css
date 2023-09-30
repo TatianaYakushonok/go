@@ -1,8 +1,16 @@
+.blockquote {
+  margin: 0;
+}
+
 .blockquote-text {
   font-size: 44px;
   font-weight: 400;
   line-height: 1.13636;
   text-transform: uppercase;
+}
+
+.blockquote-text span {
+  padding-left: 55px;
 }
 
 .blockquote-text::before,
