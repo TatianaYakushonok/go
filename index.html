@@ -9,8 +9,8 @@
 </head>
 <body>
 
-  <div class="wrapper">
-    <header>
+  <header>
+    <div class="container">
       <img src="img/logo.png" alt="Логотип">
 
       <h1>Меню</h1>
@@ -24,16 +24,21 @@
           <li><a href="#contacts">Контакты</a></li>
         </ul>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section class="promo">
+  <main>
+    <section class="section promo">
+      <div class="container">
         <h1 class="promo-title">Game Over</h1>
         <p class="promo-subtitle">Новый формат игр и отдыха</p>
-      </section>
+      </div>
+    </section>
 
-      <section>
+    <section class="section">
+      <div class="container">
         <h2 class="section-title">У нас есть все для классного отдыха с друзьями!</h2>
+        
         <ul>
           <li>
             <figure>
@@ -72,9 +77,11 @@
             </figure>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section id="halls">
+    <section class="section halls" id="halls">
+      <div class="container">
         <h2 class="section-title">Наши залы</h2>
         <ol class="halls-list">
           <li class="halls-item">
@@ -90,9 +97,11 @@
             <a class="halls-link" href="neon.html"><span>Neon <br> style</span></a>
           </li>
         </ol>
-      </section>
+      </div>
+    </section>
 
-      <section id="booking">
+    <section class="section booking" id="booking">
+      <div class="container">
         <h2 class="section-title">Забронировать зал просто</h2>
         <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
           <fieldset>
@@ -188,9 +197,11 @@
           <input type="checkbox" id="approval" name="approval" required>
           <label for="approval">Согласен на обработку данных</label>
         </form>
-      </section>
+      </div>
+    </section>
 
-      <section id="about">
+    <section class="section about" id="about">
+      <div class="container">
         <h2 class="section-title">О нас</h2>
         <p>Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в центральной части города.</p>
         <p>Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
@@ -200,9 +211,11 @@
             <span>Аркадий Абакшин, создатель игровой территории GAME OVER</span>
           </cite>
         </blockquote>
-      </section>
+      </div>
+    </section>
 
-      <section class="reviews" id="reviews">
+    <section class="section reviews" id="reviews">
+      <div class="container">
         <h2 class="section-title">Отзывы посетителей</h2>
 
         <ul>
@@ -228,9 +241,11 @@
             <p>Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса</p>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section>
+    <section>
+      <div class="container">
         <h2 class="section-title">Частые вопросы</h2>
 
         <ul class="list">
@@ -240,10 +255,12 @@
           <li class="item">Как получить VIP карту?</li>
           <li class="item">Какая комната самая популярная?</li>
         </ul>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer class="footer" id="contacts">
+  <footer class="footer" id="contacts">
+    <div class="container">
       <h2 class="section-title">Контакты</h2>
       <p class="footer-address">г. Москва ул. Аквамарина, 16</p>
     
@@ -281,7 +298,8 @@
           </a>
         </li>
       </ul>
-    </footer>
-  </div>
+    </div>
+  </footer>
+
 </body>
 </html>
