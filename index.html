@@ -10,7 +10,7 @@
 <body>
 
   <div class="wrapper">
-    <header>
+    <!--<header>
       <img src="img/logo.png" alt="Логотип">
 
       <h1>Меню</h1>
@@ -24,15 +24,15 @@
           <li><a href="#contacts">Контакты</a></li>
         </ul>
       </nav>
-    </header>
+    </header>-->
 
     <main>
-      <section class="promo">
+      <section class="section promo">
         <h2 class="promo-title">Game Over</h2>
         <p class="promo-subtitle">Новый формат игр и отдыха</p>
       </section>
 
-      <section>
+      <!--<section>
         <h2 class="section-title">У нас есть все для классного отдыха с друзьями!</h2>
         <ul>
           <li>
@@ -72,28 +72,28 @@
             </figure>
           </li>
         </ul>
-      </section>
+      </section>-->
 
-      <section id="halls">
-        <h2 class="section-title">Наши залы</h2>
+      <section class="section halls" id="halls">
+        <h2 class="section-title halls-title">Наши залы</h2>
         <ol class="halls-list">
-          <li class="halls-item">
-            <a class="halls-link" href="vibes.html"><span>80's <br> vibes</span></a>
+          <li class="halls-item halls-item-vibes">
+            <a class="halls-link" href="vibes.html">80's vibes</a>
           </li>
-          <li class="halls-item">
-            <a class="halls-link" href="starwars.html"><span>Star <br> wars</span></a>
+          <li class="halls-item halls-item-starwars">
+            <a class="halls-link" href="starwars.html">Star wars</a>
           </li>
-          <li class="halls-item">
-            <a class="halls-link" href="wildwest.html"><span>Wild <br> west</span></a>
+          <li class="halls-item halls-item-wildwest">
+            <a class="halls-link" href="wildwest.html">Wild west</a>
           </li>
-          <li class="halls-item">
-            <a class="halls-link" href="neon.html"><span>Neon <br> style</span></a>
+          <li class="halls-item halls-item-neonstyle">
+            <a class="halls-link" href="neon.html">Neon style</a>
           </li>
         </ol>
       </section>
 
-      <section id="booking">
-        <h2 class="section-title">Забронировать зал просто</h2>
+      <section class="section booking" id="booking">
+        <h2 class="section-title booking-title">Забронировать</h2>
         <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
           <fieldset>
             <legend>Выбери зал</legend>
@@ -190,19 +190,27 @@
         </form>
       </section>
 
-      <section id="about">
-        <h2 class="section-title">О нас</h2>
-        <p>Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в центральной части города.</p>
-        <p>Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
+      <section class="section about" id="about">
+        <h2 class="section-title about-title">О нас</h2>
+
+        <div class="about-info">
+          <p class="about-text">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.</p>
+          <p class="about-text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
+        </div>
+        
         <blockquote class="blockquote">
-          <p class="blockquote-text"><b>GAME OVER</b> - <br><span>это место незабываемых впечатлений</span></p>
-          <cite class="blockquote-author">
-            <span>Аркадий Абакшин, создатель игровой территории GAME OVER</span>
-          </cite>
+          <p class="blockquote-text">GAME OVER -
+    это место незабываемых впечатлений</p>
         </blockquote>
+        <cite class="blockquote-author author">
+          <figure class="author-info">
+            <img class="author-img" src="img/abakshin.jpeg" alt="Аркадий Абакшин">
+            <figcaption class="author-title">Аркадий Абакшин, создатель игровой территории GAME OVER</figcaption>
+          </figure>
+        </cite>
       </section>
 
-      <section class="reviews" id="reviews">
+      <!--<section class="reviews" id="reviews">
         <h2 class="section-title">Отзывы посетителей</h2>
 
         <ul>
@@ -228,10 +236,10 @@
             <p>Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса</p>
           </li>
         </ul>
-      </section>
+      </section>-->
 
-      <section>
-        <h2 class="section-title">Частые вопросы</h2>
+      <section class="section faq">
+        <h2 class="section-title faq-title">Частые вопросы</h2>
 
         <ul class="list">
           <li class="item">Можно ли забронировать комнату онлайн?</li>
@@ -244,11 +252,14 @@
     </main>
 
     <footer class="footer" id="contacts">
-      <h2 class="section-title">Контакты</h2>
-      <p class="footer-address">г. Москва ул. Аквамарина, 16</p>
+      <h2 class="section-title footer-title">Контакты</h2>
+
+      <div class="address">
+        <p class="footer-address">г. Москва ул. Аквамарина, 16</p>
     
-      <a class="footer-phone" href="tel:89509302893">8 (950) 930-28-93</a>
-      <a class="footer-email" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
+        <a class="footer-phone" href="tel:89509302893">8 (950) 930-28-93</a>
+        <a class="footer-email" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
+      </div>
       
       <ul class="social-list">
         <li class="social-icon">
