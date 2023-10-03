@@ -18,7 +18,7 @@
   margin-bottom: 40px;
   font-size: 44px;
   line-height: 50px;
-  white-space: pre;
+  white-space: pre-line;
   text-transform: uppercase;
 }
 
@@ -26,22 +26,21 @@
 .blockquote-text::after {
   font-weight: 900;
   line-height: 50px;
-  color: #6C0287;
+  color: #6c0287;
   text-transform: uppercase;
 }
 
 .blockquote-text::before {
-  content: '\201C';
+  content: "\201C";
   margin-right: 32px;
 }
 
 .blockquote-text::after {
-  content: '\201D';
+  content: "\201D";
   margin-left: 32px;
 }
 
 .blockquote-author {
-  display: block;
   line-height: 1.4;
   float: right;
 }
@@ -58,5 +57,5 @@
 
 .author-title {
   display: inline-block;
-  max-width: 279px;
+  max-width: 271px;
 }
