@@ -7,11 +7,12 @@
 .promo::after {
   position: absolute;
   top: 230px;
+  right: 100px;
   content: "";
   width: 100%;
   height: 762px;
   display: inline-block;
-  background: url("../img/vr.png") right -5px top 0 / contain no-repeat;
+  background: url("../img/vr.png") right / contain no-repeat;
 }
 
 .promo-title {

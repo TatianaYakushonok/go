@@ -1,10 +1,25 @@
-* {
+html {
+  position: relative;
   box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
-  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+  min-width: 320px;
+  min-height: 100vh;
   font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.4;
@@ -12,14 +27,22 @@ body {
   background-color: #1b1a1b;
 }
 
-h1,
-h2,
-p,
-figure,
-figcaption,
-blockquote {
-  margin: 0;
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  max-height: 100%;
+}
+
+button {
   padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 a {
@@ -27,21 +50,35 @@ a {
   color: inherit;
 }
 
-ol,
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-img,
-svg {
-  max-width: 100%;
-  height: auto;
+h1,
+h2,
+h3,
+p,
+figure,
+figcaption,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
 }
 
-.wrapper {
-  width: 1200px;
+iframe {
+  border: none;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.container {
+  max-width: 1240px;
   padding: 0 30px;
   margin: 0 auto;
 }
