@@ -15,7 +15,7 @@
   background: url("../img/vr.png") right / contain no-repeat;
 }
 
-.promo-title {
+.promo__title {
   margin-bottom: 0;
   font-size: 150px;
   font-weight: 900;
@@ -24,7 +24,7 @@
   text-transform: uppercase;
 }
 
-.promo-subtitle {
+.promo__subtitle {
   font-size: 28px;
   padding-left: 100px;
 }
