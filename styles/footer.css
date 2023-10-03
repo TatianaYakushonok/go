@@ -17,18 +17,18 @@
   margin-bottom: 38px;
 }
 
-.address__link_phone {
+.address__phone {
   margin-bottom: 11px;
 }
 
-.address__link_phone,
-.address__link_email {
+.address__phone,
+.address__email {
   display: inline-block;
 }
 
 .address__info::before,
-.address__link_phone::before,
-.address__link_email::before {
+.address__phone::before,
+.address__email::before {
   content: "";
   display: inline-block;
   width: 35px;
@@ -41,11 +41,11 @@
   background: url("../img/location.svg") center/cover no-repeat;
 }
 
-.address__link_phone::before {
+.address__phone::before {
   background: url("../img/phone-call.svg") center/cover no-repeat;
 }
 
-.address__link_email::before {
+.address__email::before {
   width: 36px;
   margin-right: 26px;
   background: url("../img/envelope.svg") center/cover no-repeat;
