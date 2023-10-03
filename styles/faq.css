@@ -2,11 +2,11 @@
   clear: both;
 }
 
-.faq-title {
+.faq__title {
   margin-bottom: 40px;
 }
 
-.item {
+.faq__item {
   position: relative;
   padding: 30px 70px;
   margin-bottom: 20px;
@@ -16,12 +16,12 @@
   background-color: #fff;
 }
 
-.item:nth-child(even) {
+.faq__item:nth-child(even) {
   color: #fff;
   background-color: #440f51;
 }
 
-.item::after {
+.faq__item::after {
   position: absolute;
   top: 50%;
   left: 90%;
@@ -32,10 +32,10 @@
   transform: translateY(-50%);
 }
 
-.item:nth-child(odd)::after {
+.faq__item:nth-child(odd)::after {
   background: url("../img/open-purple.svg") center/cover no-repeat;
 }
 
-.item:nth-child(even)::after {
+.faq__item:nth-child(even)::after {
   background: url("../img/open.svg") center/cover no-repeat;
 }
