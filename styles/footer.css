@@ -1,39 +1,54 @@
 .footer {
+  padding: 50px 0 51px;
   font-size: 24px;
   font-weight: 700;
-  line-height: 1.16667;
+  line-height: 28px;
+}
+
+.footer-title {
+  margin-bottom: 54px;
+}
+
+.address {
+  margin-bottom: 35px;
+}
+
+.footer-address {
+  margin-bottom: 38px;
+}
+
+.footer-phone {
+  margin-bottom: 11px;
 }
 
 .footer-phone,
 .footer-email {
-  display: block;
+  display: inline-block;
+}
+
+.footer-address::before,
+.footer-phone::before,
+.footer-email::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 32px;
+  margin-right: 36px;
+  vertical-align: middle;
 }
 
 .footer-address::before {
-  content: '';
-  display: inline-block;
-  width: 35px;
-  height: 32px;
-  margin-right: 36px;
-  background: url('../img/location.svg') center/cover no-repeat;
+  background: url("../img/location.svg") center/cover no-repeat;
 }
 
 .footer-phone::before {
-  content: '';
-  display: inline-block;
-  width: 35px;
-  height: 32px;
-  margin-right: 36px;
-  background: url('../img/phone-call.svg') center/cover no-repeat;
+  background: url("../img/phone-call.svg") center/cover no-repeat;
 }
 
 .footer-email::before {
-  content: '';
-  display: inline-block;
   width: 36px;
-  height: 32px;
   margin-right: 26px;
-  background: url('../img/envelope.svg') center/cover no-repeat;
+  background: url("../img/envelope.svg") center/cover no-repeat;
 }
 
 .social-icon {
@@ -51,8 +66,9 @@
   outline-offset: 3px;
   outline: 1px solid transparent;
   border-radius: 50%;
+  vertical-align: middle;
   transition-property: color, outline-color;
-  transition-duration: .3s, .2s;
+  transition-duration: 0.3s, 0.2s;
   transition-timing-function: ease-in-out;
 }
 

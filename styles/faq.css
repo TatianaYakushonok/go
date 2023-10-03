@@ -1,3 +1,11 @@
+.faq {
+  clear: both;
+}
+
+.faq-title {
+  margin-bottom: 40px;
+}
+
 .item {
   position: relative;
   padding: 30px 70px;
