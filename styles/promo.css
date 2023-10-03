@@ -14,17 +14,3 @@
   display: inline-block;
   background: url("../img/vr.png") right / contain no-repeat;
 }
-
-.promo__title {
-  margin-bottom: 0;
-  font-size: 150px;
-  font-weight: 900;
-  line-height: 1;
-  letter-spacing: -15px;
-  text-transform: uppercase;
-}
-
-.promo__subtitle {
-  font-size: 28px;
-  padding-left: 100px;
-}
