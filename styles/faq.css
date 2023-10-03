@@ -1,33 +1,41 @@
+.faq {
+  clear: both;
+}
+
+.faq-title {
+  margin-bottom: 40px;
+}
+
 .item {
   position: relative;
-  background-color: #fff;
-  color: #1c1f1a;
-  font-weight: 700;
-  font-size: 24px;
   padding: 30px 70px;
   margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1c1f1a;
+  background-color: #fff;
 }
 
 .item:nth-child(even) {
-  background-color: #440f51;
   color: #fff;
+  background-color: #440f51;
 }
 
 .item::after {
-  content: '';
-  width: 46px;
-  height: 46px;
-  display: inline-block;
   position: absolute;
   top: 50%;
   left: 90%;
+  display: inline-block;
+  content: "";
+  width: 46px;
+  height: 46px;
   transform: translateY(-50%);
 }
 
 .item:nth-child(odd)::after {
-  background: url('../img/open-purple.svg') center/cover no-repeat;
+  background: url("../img/open-purple.svg") center/cover no-repeat;
 }
 
 .item:nth-child(even)::after {
-  background: url('../img/open.svg') center/cover no-repeat;
+  background: url("../img/open.svg") center/cover no-repeat;
 }
