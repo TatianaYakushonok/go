@@ -2,19 +2,19 @@
   padding-bottom: 150px;
 }
 
-.about-title {
+.about__title {
   margin-bottom: 50px;
 }
 
-.about-info {
+.about__info {
   margin-bottom: 78px;
 }
 
-.about-text:not(:last-child) {
+.about__text:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.blockquote-text {
+.quote__text {
   margin-bottom: 40px;
   font-size: 44px;
   line-height: 50px;
@@ -22,30 +22,30 @@
   text-transform: uppercase;
 }
 
-.blockquote-text::before,
-.blockquote-text::after {
+.quote__text::before,
+.quote__text::after {
   font-weight: 900;
   line-height: 50px;
   color: #6c0287;
   text-transform: uppercase;
 }
 
-.blockquote-text::before {
+.quote__text::before {
   content: "\201C";
   margin-right: 32px;
 }
 
-.blockquote-text::after {
+.quote__text::after {
   content: "\201D";
   margin-left: 32px;
 }
 
-.blockquote-author {
+.quote__author {
   line-height: 1.4;
   float: right;
 }
 
-.author-img {
+.author__img {
   display: inline-block;
   width: 80px;
   height: 80px;
@@ -55,7 +55,7 @@
   object-position: top;
 }
 
-.author-title {
+.author__title {
   display: inline-block;
   max-width: 271px;
 }
