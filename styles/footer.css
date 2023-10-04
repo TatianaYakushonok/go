@@ -38,17 +38,17 @@
 }
 
 .address__info::before {
-  background: url("../img/location.svg") center/cover no-repeat;
+  background: url("../img/footer/location.svg") center/cover no-repeat;
 }
 
 .address__phone::before {
-  background: url("../img/phone-call.svg") center/cover no-repeat;
+  background: url("../img/footer/phone-call.svg") center/cover no-repeat;
 }
 
 .address__email::before {
   width: 36px;
   margin-right: 26px;
-  background: url("../img/envelope.svg") center/cover no-repeat;
+  background: url("../img/footer/envelope.svg") center/cover no-repeat;
 }
 
 .social-list__icon {

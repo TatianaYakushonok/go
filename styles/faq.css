@@ -33,9 +33,9 @@
 }
 
 .faq__item:nth-child(odd)::after {
-  background: url("../img/open-purple.svg") center/cover no-repeat;
+  background: url("../img/faq/open-purple.svg") center/cover no-repeat;
 }
 
 .faq__item:nth-child(even)::after {
-  background: url("../img/open.svg") center/cover no-repeat;
+  background: url("../img/faq/open.svg") center/cover no-repeat;
 }
