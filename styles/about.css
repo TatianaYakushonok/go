@@ -1,13 +1,22 @@
-.about {
-  padding-bottom: 150px;
-}
-
 .about__title {
   margin-bottom: 50px;
 }
 
+.about__column {
+  display: inline-block;
+}
+
+.about__column_left {
+  width: 56%;
+}
+
+.about__column_right {
+  width: 42.38%;
+  vertical-align: top;
+}
+
 .about__info {
-  margin-bottom: 78px;
+  margin-bottom: 50px;
 }
 
 .about__text:not(:last-child) {
@@ -15,7 +24,7 @@
 }
 
 .quote__text {
-  margin-bottom: 40px;
+  margin-bottom: 39px;
   font-size: 44px;
   line-height: 50px;
   white-space: pre-line;
@@ -32,12 +41,12 @@
 
 .quote__text::before {
   content: "\201C";
-  margin-right: 32px;
+  margin-right: 10px;
 }
 
 .quote__text::after {
   content: "\201D";
-  margin-left: 32px;
+  margin-left: 10px;
 }
 
 .author {
@@ -58,4 +67,5 @@
 .author__title {
   display: inline-block;
   max-width: 271px;
+  vertical-align: top;
 }
