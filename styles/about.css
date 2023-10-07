@@ -8,11 +8,14 @@
 }
 
 .about__column_left {
-  width: 56%;
+  width: 600px;
+  height: 596px;
+  margin-right: 74px;
+  background: url("../img/about/about-img.jpg") center/cover no-repeat;
 }
 
 .about__column_right {
-  width: 42.38%;
+  width: 500px;
 }
 
 .about__info {
