@@ -1,0 +1,16 @@
+.promo {
+  position: relative;
+  min-height: 1042px;
+  padding-top: 146px;
+}
+
+.promo::after {
+  position: absolute;
+  top: 230px;
+  right: 100px;
+  content: "";
+  width: 100%;
+  height: 762px;
+  display: inline-block;
+  background: url("../img/promo/vr.png") right / contain no-repeat;
+}
