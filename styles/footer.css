@@ -5,10 +5,6 @@
   line-height: 28px;
 }
 
-.footer__title {
-  margin-bottom: 54px;
-}
-
 .address {
   margin-bottom: 35px;
 }
@@ -29,7 +25,7 @@
 .address__info::before,
 .address__phone::before,
 .address__email::before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 35px;
   height: 32px;
@@ -38,17 +34,17 @@
 }
 
 .address__info::before {
-  background: url("../img/footer/location.svg") center/cover no-repeat;
+  background: url('../img/footer/location.svg') center/cover no-repeat;
 }
 
 .address__phone::before {
-  background: url("../img/footer/phone-call.svg") center/cover no-repeat;
+  background: url('../img/footer/phone-call.svg') center/cover no-repeat;
 }
 
 .address__email::before {
   width: 36px;
   margin-right: 26px;
-  background: url("../img/footer/envelope.svg") center/cover no-repeat;
+  background: url('../img/footer/envelope.svg') center/cover no-repeat;
 }
 
 .social-list__icon {

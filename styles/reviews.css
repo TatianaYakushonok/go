@@ -2,10 +2,6 @@
   max-width: 1046px;
 }
 
-.reviews__title {
-  margin-bottom: 40px;
-}
-
 .reviews__item:not(:last-child) {
   margin-bottom: 40px;
 }

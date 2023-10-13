@@ -1,0 +1,22 @@
+.recreation__title {
+  max-width: 870px;
+  margin: 0 auto 40px;
+}
+
+.recreation__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.recreation__figure {
+  position: relative;
+}
+
+.recreation__figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 61px;
+  padding: 0 40px;
+}
