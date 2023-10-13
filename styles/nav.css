@@ -1,0 +1,11 @@
+.nav__list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav__link {
+  font-family: Arial;
+  font-size: 22px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
