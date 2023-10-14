@@ -1,12 +1,11 @@
-.about__column {
-  display: inline-block;
-  vertical-align: top;
+.about__wrapper-column {
+  display: flex;
+  column-gap: 80px;
 }
 
 .about__column_left {
   width: 600px;
   height: 596px;
-  margin-right: 74px;
   background: url('../img/about/about-img.jpg') center/cover no-repeat;
 }
 
@@ -22,8 +21,11 @@
   margin-bottom: 20px;
 }
 
-.quote__text {
+.quote {
   margin-bottom: 39px;
+}
+
+.quote__text {
   font-size: 44px;
   line-height: 50px;
   white-space: pre-line;
@@ -49,22 +51,20 @@
 }
 
 .author {
-  line-height: 1.4;
-  float: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 29px;
 }
 
 .author__img {
-  display: inline-block;
   width: 80px;
   height: 80px;
-  margin-right: 29px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: top;
+  object-position: 50% 20%;
 }
 
 .author__title {
-  display: inline-block;
   max-width: 271px;
-  vertical-align: top;
 }

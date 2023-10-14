@@ -1,1 +1,219 @@
+.booking {
+  padding: 80px 0;
+  background-color: #440f51;
+}
 
+.form__fieldset {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.form__title {
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+}
+
+.form__radio_hall {
+  display: none;
+}
+
+.form__label_hall {
+  display: inline-block;
+  padding: 7px 45px 8px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #000;
+  text-transform: uppercase;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.form__fieldset_game {
+  justify-content: space-around;
+}
+
+.fieldset {
+  margin-bottom: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 20px;
+}
+
+.fieldset__title {
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.fieldset__label {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+  font-size: 22px;
+}
+
+.fieldset__radio {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 27px;
+  height: 27px;
+  margin-right: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+
+.fieldset__radio::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #171717;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fieldset__radio:checked::after {
+  opacity: 1;
+}
+
+.fieldset__checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+}
+
+.fieldset__checkbox::after {
+  content: '\2714';
+  display: block;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fieldset__checkbox:checked::after {
+  opacity: 1;
+}
+
+.form__fieldset_date {
+  margin-bottom: 40px;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.fieldset__label_date {
+  margin-bottom: 6px;
+  padding-left: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.fieldset__input {
+  width: 300px;
+  height: 52px;
+  padding: 0 16px;
+  border: none;
+  outline: none;
+}
+
+.fieldset__input::placeholder {
+  color: #211e1e;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.fieldset__container_date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label__date {
+  /*display: flex;
+  align-items: center;
+  min-width: 134px;
+  height: 52px;
+  margin-bottom: 0;
+  padding: 0 16px;
+  color: #211e1e;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  border: none;
+  outline: none;
+  background-color: #fff;*/
+}
+
+.input__date {
+  display: flex;
+  align-items: center;
+  max-width: 134px;
+  height: 52px;
+  margin-bottom: 0;
+  padding: 0 16px;
+  color: #211e1e;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+}
+
+.fieldset__input_date {
+  position: relative;
+}
+
+.fieldset__input_date::after {
+  /*position: absolute;
+  inset: 0;
+  content: '';
+  display: block;
+  width: 21px;
+  height: 15px;
+  background: url('../img/booking/arrow.svg') center/cover no-repeat;*/
+}
+
+.form__btn {
+  padding: 16px 50px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #6c0287;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+/*Так можно перекрасить*/
+/*::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}*/
+/*А так убрать*/
+/*input[type=date]::-webkit-calendar-picker-indicator {
+opacity: 0;
+}*/

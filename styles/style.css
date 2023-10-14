@@ -68,6 +68,11 @@ fieldset {
   padding: 0;
 }
 
+fieldset {
+  border: none;
+  outline: none;
+}
+
 iframe {
   border: none;
 }
