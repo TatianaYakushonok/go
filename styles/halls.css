@@ -33,14 +33,12 @@
 }
 
 .halls__link {
-  display: inline-block;
-  width: inherit;
-  height: inherit;
   display: flex;
-  justify-content: center;
   align-items: center;
+  padding: 94px 164px 95px;
   font-size: 70px;
   font-weight: 700;
   line-height: 80px;
+  text-align: center;
   text-transform: uppercase;
 }

@@ -1,13 +1,13 @@
 .promo {
   position: relative;
-  min-height: 912px;
+  min-height: 883px;
   padding-top: 20px;
 }
 
 .promo::after {
   position: absolute;
-  top: 100px;
-  right: 100px;
+  top: 71px;
+  right: 84px;
   content: '';
   width: 100%;
   height: 762px;
@@ -18,11 +18,13 @@
 .promo__content {
   display: flex;
   gap: 40px;
+  max-width: 399px;
   text-align: center;
+  margin-bottom: 150px;
 }
 
 .promo__info {
-  margin-bottom: 150px;
+  /*margin-bottom: 150px;*/
 }
 
 .promo__advantage {
@@ -49,4 +51,12 @@
   border-radius: 10px;
   background-color: #6c0287;
   box-shadow: 0 0 10px 0 #6c0287;
+}
+
+.promo__arrow-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 140px;
+  transform: translateX(-50%);
+  z-index: 1000;
 }
