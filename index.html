@@ -189,163 +189,176 @@
           <fieldset class="form__fieldset form__fieldset_game">
             <legend class="form__title">Собери набор развлечений</legend>
 
-            <fieldset class="form__fieldset fieldset">
-              <legend class="form__title fieldset__title">Приставка:</legend>
+            <div class="form__container">
+              <fieldset class="form__fieldset fieldset">
+                <legend class="form__title fieldset__title">Приставка:</legend>
 
-              <label class="form__label fieldset__label" for="playStation">
-                <input class="form__radio fieldset__radio" type="radio"
-                  id="playStation" name="play" value="PlayStation">
-                PlayStation
-              </label>
+                <label class="form__label fieldset__label" for="playStation">
+                  <input class="form__radio fieldset__radio" type="radio"
+                    id="playStation" name="play" value="PlayStation">
+                  PlayStation
+                </label>
 
-              <label class="form__label fieldset__label" for="sega">
-                <input class="form__radio fieldset__radio" type="radio"
-                  id="sega" name="play" value="Sega Mega Drive">
-                Sega Mega Drive
-              </label>
+                <label class="form__label fieldset__label" for="sega">
+                  <input class="form__radio fieldset__radio" type="radio"
+                    id="sega" name="play" value="Sega Mega Drive">
+                  Sega Mega Drive
+                </label>
 
-              <label class="form__label fieldset__label" for="xbox">
-                <input class="form__radio fieldset__radio" type="radio"
-                  id="xbox" name="play" value="X-box One S">
-                X-box One S
-              </label>
+                <label class="form__label fieldset__label" for="xbox">
+                  <input class="form__radio fieldset__radio" type="radio"
+                    id="xbox" name="play" value="X-box One S">
+                  X-box One S
+                </label>
 
-              <label class="form__label fieldset__label" for="dendy">
-                <input class="form__radio fieldset__radio" type="radio"
-                  id="dendy" name="play" value="Dendy">
-                Dendy
-              </label>
-            </fieldset>
+                <label class="form__label fieldset__label" for="dendy">
+                  <input class="form__radio fieldset__radio" type="radio"
+                    id="dendy" name="play" value="Dendy">
+                  Dendy
+                </label>
+              </fieldset>
 
-            <fieldset class="form__fieldset fieldset">
-              <legend class="form__title fieldset__title">
-                Настольные игры:
-              </legend>
+              <fieldset class="form__fieldset fieldset">
+                <legend class="form__title fieldset__title">
+                  Настольные игры:
+                </legend>
 
-              <label class="form__label fieldset__label" for="jega">
-                <input class="form__checkbox fieldset__checkbox" type="checkbox"
-                  id="jega" name="game" value="Jenga">
-                Jenga
-              </label>
+                <label class="form__label fieldset__label" for="jega">
+                  <input class="form__checkbox fieldset__checkbox"
+                    type="checkbox" id="jega" name="game" value="Jenga">
+                  Jenga
+                </label>
 
-              <label class="form__label fieldset__label" for="monopoly">
-                <input class="form__checkbox fieldset__checkbox" type="checkbox"
-                  id="monopoly" name="game" value="Monopoly">
-                Monopoly
-              </label>
+                <label class="form__label fieldset__label" for="monopoly">
+                  <input class="form__checkbox fieldset__checkbox"
+                    type="checkbox" id="monopoly" name="game" value="Monopoly">
+                  Monopoly
+                </label>
 
-              <label class="form__label fieldset__label" for="manchkin">
-                <input class="form__checkbox fieldset__checkbox" type="checkbox"
-                  id="manchkin" name="game" value="Манчкин">
-                Манчкин
-              </label>
+                <label class="form__label fieldset__label" for="manchkin">
+                  <input class="form__checkbox fieldset__checkbox"
+                    type="checkbox" id="manchkin" name="game" value="Манчкин">
+                  Манчкин
+                </label>
 
-              <label class="form__label fieldset__label" for="alias">
-                <input class="form__checkbox fieldset__checkbox" type="checkbox"
-                  id="alias" name="game" value="Alias">
-                Alias
-              </label>
-            </fieldset>
+                <label class="form__label fieldset__label" for="alias">
+                  <input class="form__checkbox fieldset__checkbox"
+                    type="checkbox" id="alias" name="game" value="Alias">
+                  Alias
+                </label>
+              </fieldset>
 
-            <fieldset class="form__fieldset fieldset">
-              <legend class="form__title fieldset__title">
-                Дополнительно:
-              </legend>
+              <fieldset class="form__fieldset fieldset">
+                <legend class="form__title fieldset__title">
+                  Дополнительно:
+                </legend>
 
-              <label class="form__label fieldset__label" for="karaoke">
-                <input class="form__checkbox fieldset__checkbox" type="checkbox"
-                  id="karaoke" name="optional" value="Караоке">
-                Караоке
-              </label>
+                <label class="form__label fieldset__label" for="karaoke">
+                  <input class="form__checkbox fieldset__checkbox"
+                    type="checkbox" id="karaoke" name="optional"
+                    value="Караоке">
+                  Караоке
+                </label>
 
-              <label class="form__label fieldset__label" for="vr">
-                <input class="form__checkbox fieldset__checkbox" type="checkbox"
-                  id="vr" name="optional" value="VR">
-                VR
-              </label>
-            </fieldset>
+                <label class="form__label fieldset__label" for="vr">
+                  <input class="form__checkbox fieldset__checkbox"
+                    type="checkbox" id="vr" name="optional" value="VR">
+                  VR
+                </label>
+              </fieldset>
+            </div>
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset_date">
             <legend class="form__title">Выбери дату и время</legend>
 
-            <fieldset class="form__fieldset fieldset">
-              <div class="fieldset__container_date">
-                <!--<label class="fieldset__label fieldset__label_date label__date"
-                  for="date">
-                </label>-->
+            <div class="form__container">
+              <fieldset class="form__fieldset fieldset fieldset__date">
+                <div class="fieldset__container_date">
+                  <label
+                    class="fieldset__label fieldset__label_date label__date"
+                    for="date">
+                    Дата
+                  </label>
+                  <input
+                    class="fieldset__input fieldset__input_date input__date"
+                    type="text" name="date" id="date" required>
+
+                  <label
+                    class="fieldset__label fieldset__label_date label__date"
+                    for="time">
+                    Время
+                  </label>
+                  <input
+                    class="fieldset__input fieldset__input_date input__date"
+                    type="text" name="time" id="time" required>
+                </div>
+
+                <label class="fieldset__label fieldset__label_date label__count"
+                  for="count">
+                  Сколько человек
+                </label>
                 <input class="fieldset__input fieldset__input_date input__date"
-                  type="text" onfocus="(this.type='date')"
-                  onblur="(this.type='text')" name="date" id="date"
-                  placeholder="Дата" required>
+                  type="number" name="count" id="count" required>
+              </fieldset>
 
-                <!--<label class="fieldset__label fieldset__label_date label__date"
-                  for="time">
-                </label>-->
-                <input class="fieldset__input fieldset__input_date input__date"
-                  type="text" onfocus="(this.type='time')"
-                  onblur="(this.type='text')" name="time" id="time"
-                  placeholder="Время" required>
-              </div>
+              <fieldset class="form__fieldset fieldset fieldset__info">
 
-              <!--<label class="fieldset__label fieldset__label_date label__count"
-                for="count">
-              </label>-->
-              <input class="fieldset__input fieldset__input_date" type="number"
-                name="count" id="count" placeholder="Сколько человек" required>
-            </fieldset>
+                <div class="fieldset__date_wrapp">
+                  <label class="fieldset__label fieldset__label_date"
+                    for="name">
+                    Имя<sup>*</sup>
+                  </label>
+                  <input class="fieldset__input" type="text" name="name"
+                    id="name" required>
+                </div>
 
-            <fieldset class="form__fieldset fieldset">
+                <div class="fieldset__date_wrapp">
+                  <label class="fieldset__label fieldset__label_date"
+                    for="surname">
+                    Фамилия<sup>*</sup>
+                  </label>
+                  <input class="fieldset__input" type="text" name="surname"
+                    id="surname" required>
+                </div>
+              </fieldset>
 
-              <div class="fieldset__date_wrapp">
-                <label class="fieldset__label fieldset__label_date" for="name">
-                  Имя<sup>*</sup>
-                </label>
-                <input class="fieldset__input" type="text" name="name" id="name"
-                  required>
-              </div>
+              <fieldset class="form__fieldset fieldset fieldset__info">
+                <div class="fieldset__date_wrapp">
+                  <label class="fieldset__label fieldset__label_date"
+                    for="phone">
+                    Номер телефона<sup>*</sup>
+                  </label>
+                  <input class="fieldset__input" type="tel" name="phone"
+                    id="phone" title="+7___-___-__-__"
+                    pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
+                    required>
+                </div>
 
-              <div class="fieldset__date_wrapp">
-                <label class="fieldset__label fieldset__label_date"
-                  for="surname">
-                  Фамилия<sup>*</sup>
-                </label>
-                <input class="fieldset__input" type="text" name="surname"
-                  id="surname" required>
-              </div>
-            </fieldset>
+                <div class="fieldset__date_wrapp">
+                  <label class="fieldset__label fieldset__label_date"
+                    for="email">
+                    E-mail<sup>*</sup>
+                  </label>
+                  <input class="fieldset__input" type="email" name="email"
+                    id="email" required>
+                </div>
+              </fieldset>
 
-            <fieldset class="form__fieldset fieldset">
-              <div class="fieldset__date_wrapp">
-                <label class="fieldset__label fieldset__label_date" for="phone">
-                  Номер телефона<sup>*</sup>
-                </label>
-                <input class="fieldset__input" type="tel" name="phone"
-                  id="phone" title="+7___-___-__-__"
-                  pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
-                  required>
-              </div>
-
-              <div class="fieldset__date_wrapp">
-                <label class="fieldset__label fieldset__label_date" for="email">
-                  E-mail<sup>*</sup>
-                </label>
-                <input class="fieldset__input" type="email" name="email"
-                  id="email" required>
-              </div>
-            </fieldset>
-
-            <!--<input class="form__checkbox" type="checkbox" id="age" name="age"
-              required>
-            <label class="form__label" for="age">Я старше 18 лет</label>-->
+              <!--<input class="form__checkbox" type="checkbox" id="age" name="age"
+                required>
+              <label class="form__label" for="age">Я старше 18 лет</label>-->
+            </div>
           </fieldset>
 
-          <button class="form__btn" type="submit">Забронировать</button>
+          <div class="form__container">
+            <button class="form__btn" type="submit">Забронировать</button>
 
-          <!--<input class="form__checkbox" type="checkbox" id="approval"
-            name="approval" required>
-          <label class="form__label" for="approval">Согласен на обработку
-            данных</label>-->
+            <!--<input class="form__checkbox" type="checkbox" id="approval"
+              name="approval" required>
+            <label class="form__label" for="approval">Согласен на обработку
+              данных</label>-->
+          </div>
         </form>
       </div>
     </section>

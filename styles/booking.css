@@ -3,6 +3,13 @@
   background-color: #440f51;
 }
 
+.form__container {
+  width: 980px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 .form__fieldset {
   display: flex;
   justify-content: space-between;
@@ -43,6 +50,15 @@
   flex-direction: column;
   justify-content: flex-start;
   row-gap: 20px;
+}
+
+.fieldset__date {
+  justify-content: flex-end;
+  row-gap: 36px;
+}
+
+.fieldset__info {
+  row-gap: 14px;
 }
 
 .fieldset__title {
@@ -136,69 +152,61 @@
 .fieldset__input {
   width: 300px;
   height: 52px;
-  padding: 0 16px;
+  padding: 12px 20px;
   border: none;
   outline: none;
 }
 
 .fieldset__input::placeholder {
-  color: #211e1e;
   font-size: 18px;
   line-height: 28px;
+  color: #211e1e;
 }
 
 .fieldset__container_date {
   display: flex;
   justify-content: space-between;
-}
-
-.label__date {
-  /*display: flex;
-  align-items: center;
-  min-width: 134px;
-  height: 52px;
-  margin-bottom: 0;
-  padding: 0 16px;
-  color: #211e1e;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-  border: none;
-  outline: none;
-  background-color: #fff;*/
+  column-gap: 32px;
 }
 
 .input__date {
+  display: none;
+}
+
+.label__date,
+.label__count {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  max-width: 134px;
   height: 52px;
   margin-bottom: 0;
-  padding: 0 16px;
-  color: #211e1e;
+  padding: 12px 20px;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
-  border: none;
-  outline: none;
+  color: #211e1e;
   background-color: #fff;
 }
 
-.fieldset__input_date {
-  position: relative;
+.label__date {
+  min-width: 134px;
 }
 
-.fieldset__input_date::after {
-  /*position: absolute;
-  inset: 0;
+.label__count {
+  width: 300px;
+}
+
+.label__date::after,
+.label__count::after {
   content: '';
   display: block;
   width: 21px;
   height: 15px;
-  background: url('../img/booking/arrow.svg') center/cover no-repeat;*/
+  background: url('../img/booking/arrow.svg') center/cover no-repeat;
 }
 
 .form__btn {
+  margin-left: auto;
   padding: 16px 50px;
   font-size: 22px;
   font-weight: 700;
@@ -208,12 +216,3 @@
   border-radius: 10px;
   background-color: #fff;
 }
-
-/*Так можно перекрасить*/
-/*::-webkit-calendar-picker-indicator {
-  filter: invert(1);
-}*/
-/*А так убрать*/
-/*input[type=date]::-webkit-calendar-picker-indicator {
-opacity: 0;
-}*/
