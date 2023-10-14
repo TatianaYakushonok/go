@@ -1,14 +1,19 @@
 .reviews__container {
-  max-width: 1046px;
+  max-width: 1040px;
 }
 
-.reviews__item:not(:last-child) {
-  margin-bottom: 40px;
+.reviews__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.reviews__item {
+  display: flex;
+  column-gap: 20px;
 }
 
 .reviews__figure {
-  display: inline-block;
-  margin-right: 20px;
   text-align: center;
 }
 
@@ -21,13 +26,15 @@
   object-position: top;
 }
 
+.reviews__img_two {
+  object-position: 50% 30%;
+}
+
 .reviews__img_three {
   object-position: center;
 }
 
 .reviews__text {
-  display: inline-block;
   width: 680px;
   padding-top: 40px;
-  vertical-align: top;
 }
