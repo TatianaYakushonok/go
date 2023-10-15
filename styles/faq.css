@@ -27,12 +27,29 @@
   width: 46px;
   height: 46px;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 
 .faq__item:nth-child(odd)::after {
   background: url('../img/faq/open-purple.svg') center/cover no-repeat;
 }
 
+.faq__item:nth-child(odd):hover::after {
+  background: url('../img/faq/open-purple-hover.svg') center/cover no-repeat;
+}
+
+.faq__item:nth-child(odd):active::after {
+  background: url('../img/faq/close-purple.svg') center/cover no-repeat;
+}
+
 .faq__item:nth-child(even)::after {
   background: url('../img/faq/open.svg') center/cover no-repeat;
+}
+
+.faq__item:nth-child(even):hover::after {
+  background: url('../img/faq/open-hover.svg') center/cover no-repeat;
+}
+
+.faq__item:nth-child(even):active::after {
+  background: url('../img/faq/close.svg') center/cover no-repeat;
 }

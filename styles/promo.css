@@ -9,7 +9,7 @@
   top: 71px;
   right: 84px;
   content: '';
-  width: 100%;
+  width: 675px;
   height: 762px;
   display: inline-block;
   background: url('../img/promo/vr.png') right / contain no-repeat;
@@ -49,10 +49,42 @@
   box-shadow: 0 0 10px 0 #6c0287;
 }
 
+.promo__btn:hover,
+.promo__btn:focus {
+  background-color: #840aa3;
+}
+
+.promo__btn:active {
+  background-color: #640aa3;
+}
+
 .promo__arrow-btn {
   position: absolute;
   left: 50%;
   bottom: 140px;
   transform: translateX(-50%);
   z-index: 1000;
+  outline: none;
+}
+
+.arrow-btn__svg:hover circle {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.arrow-btn__svg:hover rect {
+  fill: #6c0287;
+}
+
+.arrow-btn__svg:active circle {
+  fill: #cd06ff;
+  stroke: #cd06ff;
+}
+
+.arrow-btn__svg:active rect {
+  fill: #fff;
+}
+
+.arrow-btn__svg:focus circle {
+  stroke: #cd06ff;
 }

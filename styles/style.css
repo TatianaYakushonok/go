@@ -42,6 +42,7 @@ button {
   padding: 0;
   cursor: pointer;
   border: none;
+  outline: none;
   background-color: transparent;
 }
 

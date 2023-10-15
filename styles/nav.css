@@ -9,3 +9,12 @@
   line-height: 50px;
   text-transform: uppercase;
 }
+
+.nav__link:hover,
+.nav__link:focus {
+  color: #840aa3;
+}
+
+.nav__link:active {
+  color: #640aa3;
+}

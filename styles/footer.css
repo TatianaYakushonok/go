@@ -65,22 +65,28 @@
   height: 50px;
   outline-offset: 3px;
   outline: 1px solid transparent;
-  border-radius: 50%;
   transition-property: color, outline-color;
   transition-duration: 0.3s, 0.2s;
   transition-timing-function: ease-in-out;
 }
 
+.address__phone:hover,
+.address__email:hover,
 .social-list__link:hover {
-  color: #cd05ff;
+  color: #eadeed;
 }
 
+.address__phone:focus,
+.address__email:focus,
 .social-list__link:focus {
-  outline-color: #cd05ff;
+  outline-color: #cd06ff;
+  color: #eadeed;
 }
 
+.address__phone:active,
+.address__email:active,
 .social-list__link:active {
-  color: #840aa3;
+  color: #cd06ff;
 }
 
 .footer__copyright-container {
@@ -95,4 +101,17 @@
   display: flex;
   flex-direction: column;
   row-gap: 6px;
+}
+
+.contact-list__link:hover {
+  color: #eadeed;
+}
+
+.contact-list__link:focus {
+  outline-color: #cd06ff;
+  color: #eadeed;
+}
+
+.contact-list__link:active {
+  color: #cd06ff;
 }
