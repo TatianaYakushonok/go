@@ -52,12 +52,12 @@
   row-gap: 20px;
 }
 
-.fieldset__date {
+.fieldset_date {
   justify-content: flex-end;
   row-gap: 36px;
 }
 
-.fieldset__info {
+.fieldset_info {
   row-gap: 14px;
 }
 
@@ -144,7 +144,6 @@
   margin-bottom: 6px;
   padding-left: 0;
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
   line-height: 16px;
 }
@@ -163,18 +162,18 @@
   color: #211e1e;
 }
 
-.fieldset__container_date {
+.fieldset__container {
   display: flex;
   justify-content: space-between;
   column-gap: 32px;
 }
 
-.input__date {
+.fieldset__input_date {
   display: none;
 }
 
-.label__date,
-.label__count {
+.fieldset__label_date,
+.fieldset__label_count {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -188,16 +187,16 @@
   background-color: #fff;
 }
 
-.label__date {
+.fieldset__label_date {
   min-width: 134px;
 }
 
-.label__count {
+.fieldset__label_count {
   width: 300px;
 }
 
-.label__date::after,
-.label__count::after {
+.fieldset__label_date::after,
+.fieldset__label_count::after {
   content: '';
   display: block;
   width: 21px;

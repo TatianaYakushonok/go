@@ -23,10 +23,6 @@
   margin-bottom: 150px;
 }
 
-.promo__info {
-  /*margin-bottom: 150px;*/
-}
-
 .promo__advantage {
   font-size: 75px;
   font-weight: 900;
@@ -35,7 +31,7 @@
   font-variant: all-small-caps;
 }
 
-.promo__advantage_text {
+.promo__advantage-text {
   font-size: 30px;
   line-height: normal;
 }

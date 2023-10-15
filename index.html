@@ -44,12 +44,12 @@
         <div class="promo__content">
           <div class="promo__info">
             <span class="promo__advantage">4</span>
-            <p class="promo__advantage_text">Тематических зала</p>
+            <p class="promo__advantage-text">Тематических зала</p>
           </div>
 
           <div class="promo__info">
             <span class="promo__advantage">new</span>
-            <p class="promo__advantage_text">Новейшая аппаратура</p>
+            <p class="promo__advantage-text">Новейшая аппаратура</p>
           </div>
         </div>
 
@@ -273,38 +273,34 @@
             <legend class="form__title">Выбери дату и время</legend>
 
             <div class="form__container">
-              <fieldset class="form__fieldset fieldset fieldset__date">
-                <div class="fieldset__container_date">
-                  <label
-                    class="fieldset__label fieldset__label_date label__date"
+              <fieldset class="form__fieldset fieldset fieldset_date">
+                <div class="fieldset__container">
+                  <label class="fieldset__label fieldset__label_date"
                     for="date">
                     Дата
                   </label>
-                  <input
-                    class="fieldset__input fieldset__input_date input__date"
-                    type="text" name="date" id="date" required>
+                  <input class="fieldset__input fieldset__input_date"
+                    type="date" name="date" id="date" required>
 
-                  <label
-                    class="fieldset__label fieldset__label_date label__date"
+                  <label class="fieldset__label fieldset__label_date"
                     for="time">
                     Время
                   </label>
-                  <input
-                    class="fieldset__input fieldset__input_date input__date"
-                    type="text" name="time" id="time" required>
+                  <input class="fieldset__input fieldset__input_date"
+                    type="time" name="time" id="time" required>
                 </div>
 
-                <label class="fieldset__label fieldset__label_date label__count"
+                <label class="fieldset__label fieldset__label_count"
                   for="count">
                   Сколько человек
                 </label>
-                <input class="fieldset__input fieldset__input_date input__date"
+                <input class="fieldset__input fieldset__input_date"
                   type="number" name="count" id="count" required>
               </fieldset>
 
-              <fieldset class="form__fieldset fieldset fieldset__info">
+              <fieldset class="form__fieldset fieldset fieldset_info">
 
-                <div class="fieldset__date_wrapp">
+                <div class="fieldset__container-date">
                   <label class="fieldset__label fieldset__label_date"
                     for="name">
                     Имя<sup>*</sup>
@@ -313,7 +309,7 @@
                     id="name" required>
                 </div>
 
-                <div class="fieldset__date_wrapp">
+                <div class="fieldset__container-date">
                   <label class="fieldset__label fieldset__label_date"
                     for="surname">
                     Фамилия<sup>*</sup>
@@ -323,8 +319,8 @@
                 </div>
               </fieldset>
 
-              <fieldset class="form__fieldset fieldset fieldset__info">
-                <div class="fieldset__date_wrapp">
+              <fieldset class="form__fieldset fieldset fieldset_info">
+                <div class="fieldset__container-date">
                   <label class="fieldset__label fieldset__label_date"
                     for="phone">
                     Номер телефона<sup>*</sup>
@@ -335,7 +331,7 @@
                     required>
                 </div>
 
-                <div class="fieldset__date_wrapp">
+                <div class="fieldset__container-date">
                   <label class="fieldset__label fieldset__label_date"
                     for="email">
                     E-mail<sup>*</sup>
