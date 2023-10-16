@@ -79,7 +79,7 @@
 .address__phone:focus,
 .address__email:focus,
 .social-list__link:focus {
-  outline-color: #cd06ff;
+  outline: 1px solid #cd06ff;
   color: #eadeed;
 }
 
@@ -103,13 +103,13 @@
   row-gap: 6px;
 }
 
-.contact-list__link:hover {
+.contact-list__link:hover,
+.contact-list__link:focus {
   color: #eadeed;
 }
 
 .contact-list__link:focus {
-  outline-color: #cd06ff;
-  color: #eadeed;
+  outline: 1px solid #cd06ff;
 }
 
 .contact-list__link:active {

@@ -54,6 +54,10 @@
   background-color: #840aa3;
 }
 
+.promo__btn:focus {
+  outline: 3px solid #640aa3;
+}
+
 .promo__btn:active {
   background-color: #640aa3;
 }
@@ -76,6 +80,10 @@
   fill: #6c0287;
 }
 
+.arrow-btn__svg:focus circle {
+  stroke: #cd06ff;
+}
+
 .arrow-btn__svg:active circle {
   fill: #cd06ff;
   stroke: #cd06ff;
@@ -83,8 +91,4 @@
 
 .arrow-btn__svg:active rect {
   fill: #fff;
-}
-
-.arrow-btn__svg:focus circle {
-  stroke: #cd06ff;
 }
