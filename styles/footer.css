@@ -21,6 +21,7 @@
 .address__info {
   display: flex;
   align-items: center;
+  transition: color 0.3s ease-in-out;
 }
 
 .address__link {
@@ -101,6 +102,10 @@
   display: flex;
   flex-direction: column;
   row-gap: 6px;
+}
+
+.contact-list__link {
+  transition: color 0.3s ease-in-out;
 }
 
 .contact-list__link:hover,

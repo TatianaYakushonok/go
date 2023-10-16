@@ -28,28 +28,32 @@
   height: 46px;
   transform: translateY(-50%);
   cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-image 0.3s ease-in-out;
 }
 
 .faq__item:nth-child(odd)::after {
-  background: url('../img/faq/open-purple.svg') center/cover no-repeat;
+  background-image: url('../img/faq/open-purple.svg');
 }
 
 .faq__item:nth-child(odd):hover::after {
-  background: url('../img/faq/open-purple-hover.svg') center/cover no-repeat;
+  background-image: url('../img/faq/open-purple-hover.svg');
 }
 
 .faq__item:nth-child(odd):active::after {
-  background: url('../img/faq/close-purple.svg') center/cover no-repeat;
+  background-image: url('../img/faq/close-purple.svg');
 }
 
 .faq__item:nth-child(even)::after {
-  background: url('../img/faq/open.svg') center/cover no-repeat;
+  background-image: url('../img/faq/open.svg');
 }
 
 .faq__item:nth-child(even):hover::after {
-  background: url('../img/faq/open-hover.svg') center/cover no-repeat;
+  background-image: url('../img/faq/open-hover.svg');
 }
 
 .faq__item:nth-child(even):active::after {
-  background: url('../img/faq/close.svg') center/cover no-repeat;
+  background-image: url('../img/faq/close.svg');
 }

@@ -46,22 +46,23 @@
   border: 3px solid transparent;
   background-color: #fff;
   cursor: pointer;
+  transition: background-color, border-color 0.3s ease-in-out;
 }
 
 .form__label_hall:hover {
-  border: 3px solid #640aa3;
+  border-color: #640aa3;
   background-color: #eadeed;
 }
 
 .form__label_hall:focus {
-  border: 3px solid #640aa3;
+  border-color: #640aa3;
   background-color: #fff;
 }
 
 .form__radio_hall:checked + .form__label_hall,
 .form__label_hall:active {
   color: #fff;
-  border: 3px solid #fff;
+  border-color: #fff;
   background-color: #6c0287;
 }
 
@@ -180,6 +181,7 @@
   padding: 12px 20px;
   border: none;
   outline: none;
+  transition: outline-color 0.3s ease-in-out;
 }
 
 .fieldset__input:focus,
@@ -247,19 +249,20 @@
   border-radius: 10px;
   border: 3px solid transparent;
   background-color: #fff;
+  transition: background-color, border-color 0.3s ease-in-out;
 }
 
 .form__btn:hover {
-  border: 3px solid #6c0287;
+  border-color: #6c0287;
   background-color: #eadeed;
 }
 
 .form__btn:focus {
-  border: 3px solid #6c0287;
+  border-color: #6c0287;
   background-color: #fff;
 }
 
 .form__btn:active {
-  border: 3px solid #eadeed;
+  border-color: #eadeed;
   background-color: #eadeed;
 }

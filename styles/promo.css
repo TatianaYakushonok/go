@@ -47,6 +47,7 @@
   border-radius: 10px;
   background-color: #6c0287;
   box-shadow: 0 0 10px 0 #6c0287;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .promo__btn:hover,
@@ -68,10 +69,15 @@
   bottom: 140px;
   transform: translateX(-50%);
   z-index: 1000;
-  outline: none;
+  outline: 1px solid transparent;
 }
 
-.arrow-btn__svg:hover circle {
+.arrow-btn__svg {
+  fill: transparent;
+  transition: 0.3s;
+}
+
+.arrow-btn__svg:hover {
   fill: #fff;
   stroke: #fff;
 }
@@ -80,11 +86,11 @@
   fill: #6c0287;
 }
 
-.arrow-btn__svg:focus circle {
-  stroke: #cd06ff;
+.promo__arrow-btn:focus {
+  outline-color: #cd06ff;
 }
 
-.arrow-btn__svg:active circle {
+.arrow-btn__svg:active {
   fill: #cd06ff;
   stroke: #cd06ff;
 }
