@@ -26,6 +26,7 @@
 
 .form__radio_hall {
   display: none;
+  appearance: none;
 }
 
 .form__label_hall {
@@ -57,10 +58,24 @@
 }
 
 .fieldset_date {
+  width: 300px;
   justify-content: flex-end;
   row-gap: 36px;
 }
 
+.fieldset_name {
+  width: 280px;
+}
+
+.fieldset__container-date {
+  width: 100%;
+}
+
+.fieldset_info {
+  width: 300px;
+}
+
+.fieldset_name,
 .fieldset_info {
   row-gap: 14px;
 }
@@ -153,7 +168,7 @@
 }
 
 .fieldset__input {
-  width: 300px;
+  width: 100%;
   height: 52px;
   padding: 12px 20px;
   border: none;
@@ -196,7 +211,7 @@
 }
 
 .fieldset__label_count {
-  width: 300px;
+  width: 100%;
 }
 
 .fieldset__label_date_info::after,

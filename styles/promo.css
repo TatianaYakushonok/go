@@ -1,15 +1,15 @@
 .promo {
   position: relative;
-  min-height: 883px;
+  min-height: 890px;
   padding-top: 20px;
 }
 
 .promo::after {
   position: absolute;
-  top: 71px;
-  right: 84px;
+  top: 80px;
+  right: 130px;
   content: '';
-  width: 100%;
+  width: 675px;
   height: 762px;
   display: inline-block;
   background: url('../img/promo/vr.png') right / contain no-repeat;
@@ -17,6 +17,7 @@
 
 .promo__content {
   display: flex;
+  align-items: flex-end;
   gap: 40px;
   max-width: 399px;
   text-align: center;
@@ -24,10 +25,17 @@
 }
 
 .promo__advantage {
-  font-size: 75px;
   font-weight: 900;
   line-height: normal;
   color: #cd06ff;
+}
+
+.promo__advantage_halls {
+  font-size: 100px;
+}
+
+.promo__advantage_tech {
+  font-size: 75px;
   font-variant: all-small-caps;
 }
 
