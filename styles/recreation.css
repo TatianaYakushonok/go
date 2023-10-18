@@ -23,7 +23,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 61px;
+  min-height: 61px;
   padding: 0 40px;
   font-weight: 700;
 }

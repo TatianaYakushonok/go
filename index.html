@@ -31,7 +31,7 @@
         </ul>
       </nav>
 
-      <button class="header__btn">Заказать звонок</button>
+      <button class="header__btn" type="button">Заказать звонок</button>
     </div>
   </header>
 
@@ -43,12 +43,12 @@
 
         <div class="promo__content">
           <div class="promo__info">
-            <span class="promo__advantage">4</span>
+            <span class="promo__advantage promo__advantage_halls">4</span>
             <p class="promo__advantage-text">Тематических зала</p>
           </div>
 
           <div class="promo__info">
-            <span class="promo__advantage">new</span>
+            <span class="promo__advantage promo__advantage_tech">new</span>
             <p class="promo__advantage-text">Новейшая аппаратура</p>
           </div>
         </div>
@@ -165,25 +165,28 @@
 
             <input class="form__radio form__radio_hall" type="radio" id="vibes"
               name="hall" value="80's vibes">
-            <label class="form__label form__label_hall" for="vibes">
+            <label class="form__label form__label_hall" for="vibes"
+              tabindex="0">
               80's vibes
             </label>
 
             <input class="form__radio form__radio_hall" type="radio"
               id="starwars" name="hall" value="Star wars">
-            <label class="form__label form__label_hall" for="starwars">
+            <label class="form__label form__label_hall" for="starwars"
+              tabindex="0">
               Star wars
             </label>
 
             <input class="form__radio form__radio_hall" type="radio"
               id="wildwest" name="hall" value="Wild west">
-            <label class="form__label form__label_hall" for="wildwest">
+            <label class="form__label form__label_hall" for="wildwest"
+              tabindex="0">
               Wild west
             </label>
 
             <input class="form__radio form__radio_hall" type="radio" id="neon"
               name="hall" value="Neon style">
-            <label class="form__label form__label_hall" for="neon">
+            <label class="form__label form__label_hall" for="neon" tabindex="0">
               Neon style
             </label>
           </fieldset>
@@ -300,7 +303,7 @@
                   type="number" name="count" id="count" required>
               </fieldset>
 
-              <fieldset class="form__fieldset fieldset fieldset_info">
+              <fieldset class="form__fieldset fieldset fieldset_name">
 
                 <div class="fieldset__container-date">
                   <label class="fieldset__label fieldset__label_date"

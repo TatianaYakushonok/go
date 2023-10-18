@@ -1,13 +1,13 @@
 .promo {
   position: relative;
-  min-height: 883px;
+  min-height: 890px;
   padding-top: 20px;
 }
 
 .promo::after {
   position: absolute;
-  top: 71px;
-  right: 84px;
+  top: 80px;
+  right: 130px;
   content: '';
   width: 675px;
   height: 762px;
@@ -17,6 +17,7 @@
 
 .promo__content {
   display: flex;
+  align-items: flex-end;
   gap: 40px;
   max-width: 399px;
   text-align: center;
@@ -24,16 +25,18 @@
 }
 
 .promo__advantage {
-  font-size: 75px;
   font-weight: 900;
   line-height: normal;
   color: #cd06ff;
-  font-variant: all-small-caps;
 }
 
-.promo__advantage-text {
-  font-size: 30px;
-  line-height: normal;
+.promo__advantage_halls {
+  font-size: 100px;
+}
+
+.promo__advantage_tech {
+  font-size: 75px;
+  font-variant: all-small-caps;
 }
 
 .promo__btn {
@@ -48,15 +51,12 @@
   background-color: #6c0287;
   box-shadow: 0 0 10px 0 #6c0287;
   transition: background-color 0.3s ease-in-out;
+  outline: none;
 }
 
 .promo__btn:hover,
 .promo__btn:focus {
   background-color: #840aa3;
-}
-
-.promo__btn:focus {
-  outline: 3px solid #640aa3;
 }
 
 .promo__btn:active {
@@ -72,12 +72,12 @@
   outline: 1px solid transparent;
 }
 
-.arrow-btn__svg {
+.arrow-btn__svg circle {
   fill: transparent;
   transition: 0.3s;
 }
 
-.arrow-btn__svg:hover {
+.arrow-btn__svg:hover circle {
   fill: #fff;
   stroke: #fff;
 }
@@ -90,7 +90,7 @@
   outline-color: #cd06ff;
 }
 
-.arrow-btn__svg:active {
+.arrow-btn__svg:active circle {
   fill: #cd06ff;
   stroke: #cd06ff;
 }
