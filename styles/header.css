@@ -21,12 +21,9 @@
   background-color: transparent;
 }
 
-.header__btn:hover {
-  border: 3px solid #6c0287;
-  background-color: #6c0287;
-}
-
+.header__btn:hover,
 .header__btn:focus {
+  border: 3px solid #6c0287;
   background-color: #6c0287;
 }
 

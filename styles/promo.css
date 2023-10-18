@@ -55,15 +55,12 @@
   border-radius: 10px;
   background-color: #6c0287;
   box-shadow: 0 0 10px 0 #6c0287;
+  outline: none;
 }
 
 .promo__btn:hover,
 .promo__btn:focus {
   background-color: #840aa3;
-}
-
-.promo__btn:focus {
-  outline: 3px solid #640aa3;
 }
 
 .promo__btn:active {
@@ -88,8 +85,8 @@
   fill: #6c0287;
 }
 
-.arrow-btn__svg:focus circle {
-  stroke: #cd06ff;
+.promo__arrow-btn:focus {
+  border: 1px solid #cd06ff;
 }
 
 .arrow-btn__svg:active circle {
