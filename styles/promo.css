@@ -74,7 +74,7 @@
 
 .arrow-btn__svg circle {
   fill: transparent;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .arrow-btn__svg:hover circle {
