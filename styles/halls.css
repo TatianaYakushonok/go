@@ -44,5 +44,5 @@
 }
 
 .halls__link:focus {
-  outline: 1px solid #640aa3;
+  outline: 1px solid var(--color-accent-4);
 }

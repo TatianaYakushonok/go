@@ -27,7 +27,7 @@
 .promo__advantage {
   font-weight: 900;
   line-height: normal;
-  color: #cd06ff;
+  color: var(--color-accent-2);
 }
 
 .promo__advantage_halls {
@@ -83,16 +83,16 @@
 }
 
 .arrow-btn__svg:hover rect {
-  fill: #6c0287;
+  fill: var(--color-accent-3);
 }
 
 .promo__arrow-btn:focus {
-  outline-color: #cd06ff;
+  outline-color: var(--color-accent-2);
 }
 
 .arrow-btn__svg:active circle {
-  fill: #cd06ff;
-  stroke: #cd06ff;
+  fill: var(--color-accent-2);
+  stroke: var(--color-accent-2);
 }
 
 .arrow-btn__svg:active rect {

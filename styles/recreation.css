@@ -9,6 +9,16 @@
   gap: 20px;
 }
 
+.recreation__item {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.recreation__item:nth-child(even) {
+  padding-top: 70px;
+}
+
 .recreation__figure {
   position: relative;
   cursor: pointer;

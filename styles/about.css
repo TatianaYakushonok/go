@@ -36,7 +36,7 @@
 .quote__text::after {
   font-weight: 900;
   line-height: 50px;
-  color: #6c0287;
+  color: var(--color-accent-3);
   text-transform: uppercase;
 }
 

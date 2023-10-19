@@ -15,7 +15,7 @@
 
 .faq__item:nth-child(even) {
   color: #fff;
-  background-color: #440f51;
+  background-color: var(--color-acction);
 }
 
 .faq__item::after {

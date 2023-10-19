@@ -3,7 +3,7 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
-  background: linear-gradient(180deg, #1b1a1b 0%, #370a37 100%);
+  background: var(--bg-gradient);
 }
 
 .footer__info-container {
@@ -80,14 +80,14 @@
 .address__phone:focus,
 .address__email:focus,
 .social-list__link:focus {
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--color-accent-2);
   color: #eadeed;
 }
 
 .address__phone:active,
 .address__email:active,
 .social-list__link:active {
-  color: #cd06ff;
+  color: var(--color-accent-2);
 }
 
 .footer__copyright-container {
@@ -114,9 +114,9 @@
 }
 
 .contact-list__link:focus {
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--color-accent-2);
 }
 
 .contact-list__link:active {
-  color: #cd06ff;
+  color: var(--color-accent-2);
 }

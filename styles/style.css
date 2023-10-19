@@ -24,7 +24,7 @@ body {
   font-weight: 400;
   line-height: 1.4;
   color: #fff;
-  background-color: #1b1a1b;
+  background-color: var(--bg);
 }
 
 img,
@@ -84,8 +84,8 @@ iframe {
 }
 
 .container {
-  max-width: 1240px;
-  padding: 0 30px;
+  max-width: var(--width);
+  padding: 0 var(--padding);
   margin: 0 auto;
 }
 
