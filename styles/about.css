@@ -36,7 +36,7 @@
 .quote__text::after {
   font-weight: 900;
   line-height: 50px;
-  color: var(--color-accent-3);
+  color: var(--color-btn-hover);
   text-transform: uppercase;
 }
 

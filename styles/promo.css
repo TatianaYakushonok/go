@@ -27,7 +27,7 @@
 .promo__advantage {
   font-weight: 900;
   line-height: normal;
-  color: var(--color-accent-2);
+  color: var(--color-btn-active);
 }
 
 .promo__advantage_halls {
@@ -48,15 +48,15 @@
   color: #fff;
   text-transform: uppercase;
   border-radius: 10px;
-  background-color: #6c0287;
-  box-shadow: 0 0 10px 0 #6c0287;
+  background-color: var(--color-btn-hover);
+  box-shadow: 0 0 10px 0 var(--color-btn-hover);
   transition: background-color 0.3s ease-in-out;
   outline: none;
 }
 
 .promo__btn:hover,
 .promo__btn:focus {
-  background-color: #840aa3;
+  background-color: var(--color-promo-btn-hover);
 }
 
 .promo__btn:active {
@@ -83,16 +83,16 @@
 }
 
 .arrow-btn__svg:hover rect {
-  fill: var(--color-accent-3);
+  fill: var(--color-btn-hover);
 }
 
 .promo__arrow-btn:focus {
-  outline-color: var(--color-accent-2);
+  outline-color: var(--color-btn-active);
 }
 
 .arrow-btn__svg:active circle {
-  fill: var(--color-accent-2);
-  stroke: var(--color-accent-2);
+  fill: var(--color-btn-active);
+  stroke: var(--color-btn-active);
 }
 
 .arrow-btn__svg:active rect {
