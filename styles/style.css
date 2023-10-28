@@ -84,6 +84,8 @@ iframe {
 }
 
 .container {
+  --width: 1240px;
+  --padding: 30px;
   max-width: var(--width);
   padding: 0 var(--padding);
   margin: 0 auto;
@@ -100,4 +102,22 @@ section {
   font-weight: 700;
   line-height: 1.25;
   text-transform: uppercase;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    --padding: 60px;
+  }
+}
+
+@media (max-width: 920px) {
+  .container {
+    --padding: 40px;
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    --padding: 20px;
+  }
 }
