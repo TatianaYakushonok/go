@@ -108,6 +108,10 @@ section {
   .container {
     --padding: 60px;
   }
+
+  section {
+    padding: 35px 0;
+  }
 }
 
 @media (max-width: 920px) {

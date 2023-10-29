@@ -84,7 +84,7 @@
 
 @media (max-width: 920px) {
   .header {
-    padding: 32px 0;
+    padding: 32px 0 30px;
   }
 
   .header__burger {
