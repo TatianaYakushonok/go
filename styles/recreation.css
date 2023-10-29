@@ -108,11 +108,6 @@
     padding-top: 23px;
   }
 
-  .recreation__title {
-    max-width: 250px;
-    margin: 0 auto 15px;
-  }
-
   .recreation__list {
     gap: 10px;
   }
@@ -125,6 +120,11 @@
 }
 
 @media (max-width: 320px) {
+  .recreation__title {
+    max-width: 250px;
+    margin: 0 auto 15px;
+  }
+
   .recreation__img {
     width: 135px;
     height: 75px;
