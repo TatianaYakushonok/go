@@ -1,19 +1,46 @@
 .booking {
   padding: 80px 0;
-  background-color: var(--color-acction);
+  background-color: var(--bg-section);
+}
+
+.booking__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+
+.booking__title {
+  margin-bottom: 46px;
 }
 
 .form__container {
-  width: 980px;
+  max-width: 980px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
 
+.form__container_game {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 34px;
+}
+
+.form__container_date {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 19px;
+}
+
 .form__fieldset {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 60px;
+  flex-wrap: wrap;
+  gap: 14px;
 }
 
 .form__title {
@@ -22,6 +49,10 @@
   font-weight: 700;
   line-height: 28px;
   text-align: center;
+}
+
+.form__title_date {
+  margin-bottom: 30px;
 }
 
 .form__radio_hall {
@@ -52,12 +83,12 @@
 }
 
 .form__label_hall:hover {
-  border-color: var(--color-accent-4);
-  background-color: var(--color-accent-6);
+  border-color: var(--color-outline-focus);
+  background-color: var(--color-link-hover);
 }
 
 .form__label_hall:focus {
-  outline: 3px solid var(--color-accent-4);
+  outline: 3px solid var(--color-outline-focus);
   background-color: #fff;
 }
 
@@ -65,11 +96,7 @@
 .form__label_hall:active {
   color: #fff;
   border-color: #fff;
-  background-color: var(--color-accent-3);
-}
-
-.form__fieldset_game {
-  justify-content: space-around;
+  background-color: var(--color-btn-hover);
 }
 
 .fieldset {
@@ -80,13 +107,13 @@
   row-gap: 20px;
 }
 
-.fieldset_date {
+.fieldset__date {
   width: 300px;
   justify-content: flex-end;
   row-gap: 36px;
 }
 
-.fieldset_name {
+.fieldset__name {
   width: 280px;
 }
 
@@ -94,13 +121,13 @@
   width: 100%;
 }
 
-.fieldset_info {
+.fieldset__info {
   width: 300px;
 }
 
-.fieldset_name,
-.fieldset_info {
-  row-gap: 14px;
+.fieldset__name,
+.fieldset__info {
+  row-gap: 10px;
 }
 
 .fieldset__title {
@@ -110,9 +137,23 @@
 
 .fieldset__label {
   position: relative;
-  display: block;
   padding-left: 40px;
   font-size: 22px;
+}
+
+.fieldset__label_radio,
+.fieldset__label_checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.fieldset__label_radio {
+  height: 27px;
+}
+
+.fieldset__label_checkbox {
+  height: 25px;
+  padding-left: 34px;
 }
 
 .fieldset__radio {
@@ -141,7 +182,7 @@
   display: block;
   width: 30px;
   height: 30px;
-  outline: 1px solid var(--color-accent-2);
+  outline: 1px solid var(--color-btn-active);
   outline-offset: 1px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -158,7 +199,7 @@
   height: 8px;
   outline-offset: 3px;
   border-radius: 50%;
-  background-color: var(--color-accent-3);
+  background-color: var(--color-btn-hover);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
@@ -171,6 +212,9 @@
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   left: 0;
   top: 0;
@@ -183,21 +227,13 @@
 .fieldset__checkbox::after {
   content: '\2714';
   display: block;
-  text-align: center;
-  color: var(--color-accent-3);
+  color: var(--color-btn-hover);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
 
 .fieldset__checkbox:checked::after {
   opacity: 1;
-}
-
-.form__fieldset_date {
-  margin-bottom: 40px;
-  justify-content: space-around;
-  align-items: flex-end;
-  flex-wrap: wrap;
 }
 
 .fieldset__label_date {
@@ -218,7 +254,7 @@
 }
 
 .fieldset__input:focus {
-  outline: 2px solid var(--color-accent-2);
+  outline: 2px solid var(--color-btn-active);
 }
 
 .fieldset__radio:focus:before {
@@ -226,7 +262,8 @@
 }
 
 .fieldset__checkbox:focus {
-  outline: 1px solid var(--color-accent-2);
+  outline: 1px solid var(--color-btn-active);
+  outline-offset: 2px;
 }
 
 .fieldset__input::placeholder {
@@ -265,7 +302,7 @@
 }
 
 .fieldset__label_count {
-  width: 100%;
+  width: 300px;
 }
 
 .fieldset__label_date_info::after,
@@ -283,25 +320,251 @@
   font-size: 22px;
   font-weight: 700;
   line-height: 28px;
-  color: var(--color-accent-3);
+  color: var(--color-btn-hover);
   text-transform: uppercase;
   border-radius: 10px;
   border: 3px solid transparent;
   background-color: #fff;
+  box-shadow: 0 0 10px 0 #fff;
   transition: background-color, border-color 0.3s ease-in-out;
 }
 
 .form__btn:hover {
-  border-color: var(--color-accent-3);
-  background-color: var(--color-accent-6);
+  border-color: var(--color-btn-hover);
+  background-color: var(--color-link-hover);
 }
 
 .form__btn:focus {
-  border-color: var(--color-accent-3);
+  border-color: var(--color-btn-hover);
   background-color: #fff;
 }
 
 .form__btn:active {
-  border-color: var(--color-accent-6);
-  background-color: var(--color-accent-6);
+  border-color: var(--color-link-hover);
+  background-color: var(--color-link-hover);
+}
+
+@media (max-width: 1100px) {
+  .booking {
+    padding: 60px 0;
+  }
+
+  .booking__title {
+    margin-bottom: 42px;
+  }
+
+  .form__title {
+    margin-bottom: 26px;
+  }
+
+  .form__title_date {
+    margin-bottom: 16px;
+  }
+
+  .fieldset__label_date_info,
+  .fieldset__label_count {
+    padding: 12px 25px 12px 20px;
+  }
+
+  .fieldset__title {
+    margin-bottom: 24px;
+  }
+
+  .form__label_hall {
+    width: 180px;
+    height: 44px;
+    font-size: 20px;
+    line-height: 1.2;
+    border-radius: 6px;
+  }
+
+  .form__container_date {
+    margin-bottom: 30px;
+  }
+
+  .form__container_game {
+    justify-content: flex-start;
+    column-gap: 110px;
+  }
+
+  .fieldset__name {
+    width: 251px;
+  }
+
+  .fieldset__info {
+    width: 254px;
+  }
+
+  .form__btn {
+    padding: 13px 45px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
+@media (max-width: 960px) {
+  .booking {
+    padding: 50px 0;
+  }
+
+  .booking__form {
+    row-gap: 50px;
+  }
+
+  .form__title {
+    margin-bottom: 30px;
+  }
+
+  .fieldset__title {
+    margin-bottom: 22px;
+  }
+
+  .form__label_hall {
+    width: 150px;
+    height: 38px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .fieldset__label_radio,
+  .fieldset__label_checkbox {
+    height: 40px;
+    padding-left: 60px;
+  }
+
+  .fieldset__checkbox,
+  .fieldset__radio {
+    width: 40px;
+    height: 40px;
+  }
+
+  .fieldset__radio::before {
+    width: 42px;
+    height: 42px;
+  }
+
+  .form__container_game {
+    column-gap: 137px;
+  }
+
+  .form__title_date {
+    margin-bottom: 30px;
+  }
+
+  .fieldset__container {
+    width: 280px;
+    column-gap: 14px;
+  }
+
+  .form__container_date {
+    margin-bottom: 32px;
+    row-gap: 35px;
+  }
+
+  .fieldset__date {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 42px;
+  }
+
+  .fieldset__name {
+    width: 280px;
+  }
+
+  .fieldset__info {
+    width: 300px;
+  }
+
+  .form__btn {
+    font-size: 22px;
+    line-height: 1.27;
+  }
+}
+
+@media (max-width: 673px) {
+  .fieldset__container,
+  .fieldset__label_count,
+  .fieldset__name,
+  .fieldset__info {
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .booking {
+    padding: 30px 0;
+  }
+
+  .booking__form {
+    row-gap: 30px;
+  }
+
+  .booking__title {
+    margin-bottom: 13px;
+  }
+
+  .form__title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+
+  .fieldset__title {
+    margin-bottom: 15px;
+  }
+
+  .form__title_date {
+    margin-bottom: 25px;
+  }
+
+  .form__label_hall {
+    width: 130px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 1.28;
+    border-radius: 4px;
+  }
+
+  .fieldset__r {
+    row-gap: 15px;
+  }
+
+  .form__container_game {
+    row-gap: 26px;
+  }
+
+  .fieldset__checkbox,
+  .fieldset__radio {
+    width: 30px;
+    height: 30px;
+  }
+
+  .fieldset__radio::before {
+    width: 32px;
+    height: 32px;
+  }
+
+  .fieldset__label_radio,
+  .fieldset__label_checkbox {
+    height: 30px;
+    padding-left: 50px;
+    font-size: 16px;
+  }
+
+  .form__container_date {
+    margin-bottom: 15px;
+    row-gap: 28px;
+  }
+
+  .fieldset__date {
+    row-gap: 15px;
+  }
+
+  .form__btn {
+    width: 100%;
+    padding: 17px 58px;
+    font-size: 18px;
+    line-height: 1.44;
+  }
 }

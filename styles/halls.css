@@ -71,11 +71,11 @@
 
 @media (max-width: 768px) {
   .halls {
-    padding-bottom: 62px;
+    padding-bottom: 60px;
   }
 
   .halls__title {
-    margin-bottom: 33px;
+    margin-bottom: 30px;
   }
 
   .halls__item {
