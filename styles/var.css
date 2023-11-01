@@ -1,0 +1,10 @@
+:root {
+  --bg-page: #1b1a1b;
+  --bg-gradient: linear-gradient(180deg, #1b1a1b 0%, #370a37 100%);
+  --bg-section: #440f51;
+  --color-btn-active: #cd06ff;
+  --color-btn-hover: #6c0287;
+  --color-outline-focus: #640aa3;
+  --color-promo-btn-hover: #840aa3;
+  --color-link-hover: #eadeed;
+}

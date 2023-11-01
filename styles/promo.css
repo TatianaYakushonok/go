@@ -1,16 +1,273 @@
 .promo {
   position: relative;
-  min-height: 1042px;
-  padding-top: 146px;
+  min-height: 890px;
+  padding-top: 20px;
 }
 
 .promo::after {
   position: absolute;
-  top: 230px;
-  right: 100px;
-  content: "";
-  width: 100%;
+  top: 80px;
+  right: 9%;
+  content: '';
+  width: 675px;
   height: 762px;
   display: inline-block;
-  background: url("../img/promo/vr.png") right / contain no-repeat;
+  background: url('../img/promo/vr.png') right / cover no-repeat;
+}
+
+.promo__content {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+  max-width: 399px;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.promo__info {
+  font-size: 30px;
+  line-height: normal;
+}
+
+.promo__advantage {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: normal;
+  color: var(--color-btn-active);
+}
+
+.promo__advantage_halls {
+  font-size: 100px;
+}
+
+.promo__advantage_tech {
+  font-size: 75px;
+  font-variant: all-small-caps;
+}
+
+.promo__btn {
+  display: inline-block;
+  padding: 25px 69px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: var(--color-btn-hover);
+  box-shadow: 0 0 10px 0 var(--color-btn-hover);
+  transition: background-color 0.3s ease-in-out;
+  outline: none;
+}
+
+.promo__btn:hover,
+.promo__btn:focus {
+  background-color: var(--color-promo-btn-hover);
+}
+
+.promo__btn:active {
+  background-color: #640aa3;
+}
+
+.promo__arrow-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 140px;
+  transform: translateX(-50%);
+  z-index: 1000;
+  outline: 1px solid transparent;
+}
+
+.arrow-btn__svg circle {
+  fill: transparent;
+  transition: 0.4s;
+}
+
+.arrow-btn__svg:hover circle {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.arrow-btn__svg:hover rect {
+  fill: var(--color-btn-hover);
+}
+
+.promo__arrow-btn:focus {
+  outline-color: var(--color-btn-active);
+}
+
+.arrow-btn__svg:active circle {
+  fill: var(--color-btn-active);
+  stroke: var(--color-btn-active);
+}
+
+.arrow-btn__svg:active rect {
+  fill: #fff;
+}
+
+@media (max-width: 1170px) {
+  .promo__title {
+    margin-bottom: 20px;
+    font-size: 120px;
+    letter-spacing: -12px;
+  }
+
+  .promo__subtitle {
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .promo__content {
+    max-width: 348px;
+    margin-bottom: 80px;
+  }
+
+  .promo__info {
+    font-size: 26px;
+  }
+
+  .promo__advantage_halls {
+    font-size: 80px;
+  }
+
+  .promo__advantage_tech {
+    font-size: 60px;
+  }
+
+  .promo__btn {
+    margin-left: 39px;
+    padding: 17px 48px;
+    font-size: 22px;
+  }
+
+  .arrow-btn__svg {
+    width: 67px;
+    height: 67px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .promo {
+    min-height: 631px;
+    padding: 0 0 48px;
+  }
+
+  .promo::after {
+    width: 453px;
+    height: 520px;
+    top: 62px;
+    right: 5.8%;
+  }
+
+  .promo__arrow-btn {
+    bottom: 94px;
+  }
+}
+
+@media (max-width: 920px) {
+  .promo {
+    min-height: 577px;
+    padding-bottom: 40px;
+  }
+
+  .promo__title {
+    font-size: 86px;
+    letter-spacing: -8.6px;
+  }
+
+  .promo__subtitle {
+    margin-bottom: 50px;
+    padding-left: 70px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .promo::after {
+    width: 409px;
+    height: 479px;
+    top: 58px;
+    right: 4.2%;
+  }
+
+  .promo__content {
+    max-width: 222px;
+    margin-bottom: 100px;
+    gap: 30px;
+  }
+
+  .promo__info {
+    font-size: 16px;
+  }
+
+  .promo__advantage_halls {
+    font-size: 50px;
+  }
+
+  .promo__advantage_tech {
+    font-size: 40px;
+  }
+
+  .promo__btn {
+    margin-left: 0;
+    padding: 11px 35px 11px 34px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .promo__arrow-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 690px) {
+  .promo {
+    min-height: 227px;
+    padding-bottom: 23px;
+  }
+
+  .promo__title {
+    margin-bottom: 6px;
+    font-size: 35px;
+    letter-spacing: -2.8px;
+  }
+
+  .promo__subtitle {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .promo::after {
+    width: 161px;
+    height: 179px;
+    top: 25px;
+    right: 5.8%;
+  }
+
+  .promo__content {
+    max-width: 139px;
+    margin-bottom: 28px;
+    gap: 20px;
+  }
+
+  .promo__info {
+    font-size: 10px;
+  }
+
+  .promo__advantage_halls {
+    font-size: 26px;
+  }
+
+  .promo__advantage_tech {
+    font-size: 22px;
+  }
+
+  .promo__btn {
+    padding: 8px 13px 7px;
+    font-size: 10px;
+    line-height: 12px;
+    border-radius: 4px;
+  }
 }
