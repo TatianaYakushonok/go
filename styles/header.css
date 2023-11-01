@@ -21,6 +21,7 @@
   height: 5px;
   border-radius: 8px;
   background-color: var(--color-btn-hover);
+  transition: background-color 0.3s ease-in-out;
 }
 
 .header__burger-line::before,
@@ -32,6 +33,7 @@
   height: 5px;
   border-radius: 8px;
   background-color: var(--color-btn-hover);
+  transition: background-color 0.3s ease-in-out;
 }
 
 .header__burger-line::before {
@@ -42,6 +44,29 @@
 .header__burger-line::after {
   bottom: 0;
   width: 50%;
+}
+
+.header__burger:hover .header__burger-line,
+.header__burger:hover .header__burger-line::before,
+.header__burger:hover .header__burger-line::after {
+  background-color: var(--color-btn-active);
+}
+
+.header__burger:focus .header__burger-line,
+.header__burger:focus .header__burger-line::before,
+.header__burger:focus .header__burger-line::after {
+  background-color: var(--color-promo-btn-hover);
+}
+
+.header__burger:focus {
+  outline-offset: 8px;
+  outline: 1px solid var(--color-btn-active);
+}
+
+.header__burger:active .header__burger-line,
+.header__burger:active .header__burger-line::before,
+.header__burger:active .header__burger-line::after {
+  background-color: var(--color-promo-btn-hover);
 }
 
 .header__btn {
