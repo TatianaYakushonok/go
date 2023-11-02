@@ -3,14 +3,24 @@
 }
 
 .banner__btn-back {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
   column-gap: 10px;
   margin-bottom: 20px;
   font-size: 22px;
   font-weight: 700;
   line-height: 1.27;
+  -webkit-transition: color 0.3s ease-in-out, -webkit-transform;
+  transition: color 0.3s ease-in-out, -webkit-transform;
+  -o-transition: transform, color 0.3s ease-in-out;
   transition: transform, color 0.3s ease-in-out;
+  transition: transform, color 0.3s ease-in-out, -webkit-transform;
 }
 
 .banner__btn-back:hover,
@@ -19,6 +29,8 @@
 }
 
 .banner__btn-back:hover .banner__btn-arrow {
+  -webkit-transform: translateX(-5px);
+  -ms-transform: translateX(-5px);
   transform: translateX(-5px);
 }
 
@@ -57,13 +69,15 @@
 }
 
 .banner__img_neon {
-  background: lightgray 50% url('../img/vibes/banner-neonstyle.jpg');
+  background: lightgray 50% url('../img/neonstyle/banner-neonstyle.jpg');
 }
 
 .banner__text {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
@@ -110,6 +124,8 @@
 
   .banner__btn-back {
     margin-bottom: 15px;
+    -webkit-column-gap: 6px;
+    -moz-column-gap: 6px;
     column-gap: 6px;
     font-size: 12px;
     line-height: 1.33;

@@ -1,4 +1,6 @@
 .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 40px;
 }
@@ -8,6 +10,8 @@
   font-size: 22px;
   line-height: 50px;
   text-transform: uppercase;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 

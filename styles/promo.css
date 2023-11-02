@@ -16,7 +16,11 @@
 }
 
 .promo__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
   gap: 40px;
   max-width: 399px;
@@ -55,7 +59,10 @@
   text-transform: uppercase;
   border-radius: 10px;
   background-color: var(--color-btn-hover);
+  -webkit-box-shadow: 0 0 10px 0 var(--color-btn-hover);
   box-shadow: 0 0 10px 0 var(--color-btn-hover);
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
   outline: none;
 }
@@ -73,6 +80,8 @@
   position: absolute;
   left: 50%;
   bottom: 140px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   z-index: 1000;
   outline: 1px solid transparent;
@@ -80,6 +89,8 @@
 
 .arrow-btn__svg circle {
   fill: transparent;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 

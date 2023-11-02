@@ -1,5 +1,10 @@
 .faq__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   row-gap: 20px;
 }
@@ -10,7 +15,11 @@
 
 .faq__item {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 30px 70px 29px 70px;
   font-size: 24px;
@@ -33,11 +42,15 @@
   content: '';
   width: 46px;
   height: 46px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   cursor: pointer;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-transition: background-image 0.3s ease-in-out;
+  -o-transition: background-image 0.3s ease-in-out;
   transition: background-image 0.3s ease-in-out;
 }
 
