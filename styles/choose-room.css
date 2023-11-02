@@ -3,7 +3,9 @@
 }
 
 .choose-room__list {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr;
   grid-template-columns: repeat(12, 1fr);
   gap: 20px;
 }
@@ -12,14 +14,21 @@
   max-width: 380px;
   width: 100%;
   height: 229px;
+  -ms-grid-column-span: 4;
   grid-column: span 4;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 .choose-room__item:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -28,20 +37,26 @@
 }
 
 .choose-room__item_starwars {
-  background-image: url('../img/vibes/star-wars.png');
+  background-image: url('../img/starwars/star-wars.png');
 }
 
 .choose-room__item_wildwest {
-  background-image: url('../img/vibes/wild-west.png');
+  background-image: url('../img/wildwest/wild-west.png');
 }
 
 .choose-room__item_neonstyle {
-  background-image: url('../img/vibes/neon-style.jpeg');
+  background-image: url('../img/neonstyle/neon-style.jpeg');
 }
 
 .choose-room__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: inherit;
   height: inherit;
@@ -96,6 +111,7 @@
   .choose-room__item {
     max-width: 100%;
     height: 140px;
+    -ms-grid-column-span: 12;
     grid-column: span 12;
   }
 }
