@@ -15,6 +15,20 @@
   background: url('../img/promo/vr.png') right / cover no-repeat;
 }
 
+.promo__title {
+  font-size: 150px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -15px;
+  text-transform: uppercase;
+}
+
+.promo__subtitle {
+  margin-bottom: 40px;
+  font-size: 28px;
+  padding-left: 100px;
+}
+
 .promo__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -116,7 +130,19 @@
   fill: #fff;
 }
 
-@media (max-width: 1170px) {
+@media (max-width: 1200px) {
+  .promo {
+    min-height: 631px;
+    padding: 0 0 48px;
+  }
+
+  .promo::after {
+    width: 453px;
+    height: 520px;
+    top: 62px;
+    right: 5.8%;
+  }
+
   .promo__title {
     margin-bottom: 20px;
     font-size: 120px;
@@ -152,27 +178,13 @@
     font-size: 22px;
   }
 
+  .promo__arrow-btn {
+    bottom: 94px;
+  }
+
   .arrow-btn__svg {
     width: 67px;
     height: 67px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .promo {
-    min-height: 631px;
-    padding: 0 0 48px;
-  }
-
-  .promo::after {
-    width: 453px;
-    height: 520px;
-    top: 62px;
-    right: 5.8%;
-  }
-
-  .promo__arrow-btn {
-    bottom: 94px;
   }
 }
 
@@ -180,6 +192,13 @@
   .promo {
     min-height: 577px;
     padding-bottom: 40px;
+  }
+
+  .promo::after {
+    width: 409px;
+    height: 479px;
+    top: 58px;
+    right: 4.2%;
   }
 
   .promo__title {
@@ -192,13 +211,6 @@
     padding-left: 70px;
     font-size: 18px;
     line-height: 24px;
-  }
-
-  .promo::after {
-    width: 409px;
-    height: 479px;
-    top: 58px;
-    right: 4.2%;
   }
 
   .promo__content {

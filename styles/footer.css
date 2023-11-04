@@ -176,7 +176,7 @@
   color: var(--color-btn-active);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .footer {
     padding-top: 35px;
   }
@@ -212,7 +212,7 @@
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 920px) {
   .footer__title {
     line-height: 1.5;
   }
@@ -247,7 +247,7 @@
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 570px) {
   .footer {
     padding-top: 15px;
   }
