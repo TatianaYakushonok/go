@@ -78,7 +78,7 @@
   background-image: url('../img/faq/close.svg');
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .faq__title {
     margin-bottom: 26px;
   }
@@ -93,12 +93,29 @@
     line-height: 1.2;
   }
 
+  .faq__item:nth-child(even) {
+    color: #1c1f1a;
+    background-color: #fff;
+  }
+
+  .faq__item:nth-child(even)::after {
+    background-image: url('../img/faq/open-purple.svg');
+  }
+
+  .faq__item:nth-child(even):hover::after {
+    background-image: url('../img/faq/open-purple-hover.svg');
+  }
+
+  .faq__item:nth-child(even):active::after {
+    background-image: url('../img/faq/close-purple.svg');
+  }
+
   .faq__item:last-child {
     display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
   .faq {
     padding-bottom: 35px;
   }
@@ -118,7 +135,7 @@
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 570px) {
   .faq {
     padding-bottom: 15px;
   }

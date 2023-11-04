@@ -152,7 +152,7 @@
   row-gap: 20px;
 }
 
-.fieldset__date {
+.fieldset_date {
   width: 300px;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
@@ -160,7 +160,7 @@
   row-gap: 36px;
 }
 
-.fieldset__name {
+.fieldset_name {
   width: 280px;
 }
 
@@ -168,12 +168,12 @@
   width: 100%;
 }
 
-.fieldset__info {
+.fieldset_info {
   width: 300px;
 }
 
-.fieldset__name,
-.fieldset__info {
+.fieldset_name,
+.fieldset_info {
   row-gap: 10px;
 }
 
@@ -452,7 +452,7 @@
   background-color: var(--color-link-hover);
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .booking {
     padding: 60px 0;
   }
@@ -499,11 +499,11 @@
     column-gap: 110px;
   }
 
-  .fieldset__name {
+  .fieldset_name {
     width: 251px;
   }
 
-  .fieldset__info {
+  .fieldset_info {
     width: 254px;
   }
 
@@ -577,7 +577,7 @@
     row-gap: 35px;
   }
 
-  .fieldset__date {
+  .fieldset_date {
     width: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -589,11 +589,11 @@
     row-gap: 42px;
   }
 
-  .fieldset__name {
+  .fieldset_name {
     width: 280px;
   }
 
-  .fieldset__info {
+  .fieldset_info {
     width: 300px;
   }
 
@@ -603,26 +603,30 @@
   }
 }
 
-@media (max-width: 673px) {
+@media (max-width: 690px) {
   .fieldset__container,
   .fieldset__label_count,
-  .fieldset__name,
-  .fieldset__info {
+  .fieldset_name,
+  .fieldset_info {
     width: 100%;
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 570px) {
   .booking {
     padding: 30px 0;
+  }
+
+  .booking__title {
+    margin-bottom: 13px;
   }
 
   .booking__form {
     row-gap: 30px;
   }
 
-  .booking__title {
-    margin-bottom: 13px;
+  .form__fieldset {
+    justify-content: center;
   }
 
   .form__title {
@@ -647,7 +651,7 @@
     border-radius: 4px;
   }
 
-  .fieldset__r {
+  .fieldset_r {
     row-gap: 15px;
   }
 
@@ -678,7 +682,7 @@
     row-gap: 28px;
   }
 
-  .fieldset__date {
+  .fieldset_date {
     row-gap: 15px;
   }
 

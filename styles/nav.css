@@ -28,7 +28,7 @@
   color: var(--color-btn-active);
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .nav__list {
     gap: 20px;
   }

@@ -50,18 +50,20 @@
 }
 
 .banner__img {
+  position: relative;
   padding-top: 52.084%;
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
+  filter: grayscale(50%);
 }
 
 .banner__img_vibes {
-  background: lightgray 50% url('../img/vibes/banner-vibes.jpg');
+  background-image: url('../img/vibes/banner-vibes.jpg');
 }
 
 .banner__img_wildwest {
-  background: lightgray 0px -178.88px / 100% 127.968% url('../img/wildwest/banner-wildwest.jpeg');
+  background-image: url('../img/wildwest/banner-wildwest.jpeg');
 }
 
 .banner__img_starwars {
@@ -69,7 +71,7 @@
 }
 
 .banner__img_neon {
-  background: lightgray 50% url('../img/neonstyle/banner-neonstyle.jpg');
+  background-image: url('../img/neonstyle/banner-neonstyle.jpg');
 }
 
 .banner__text {
@@ -87,7 +89,7 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .banner {
     padding-top: 20px;
   }
@@ -97,7 +99,7 @@
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 920px) {
   .banner {
     padding-top: 8px;
   }
@@ -117,7 +119,7 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 570px) {
   .banner {
     padding-top: 0;
   }
