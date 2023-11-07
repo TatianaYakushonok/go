@@ -39,6 +39,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  column-gap: 28px;
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
@@ -58,28 +59,8 @@
   row-gap: 11px;
 }
 
-.address__location::before,
-.address__phone::before,
-.address__email::before {
-  content: '';
-  display: inline-block;
-  width: 35px;
-  height: 32px;
-  margin-right: 25px;
-}
-
-.address__location::before {
-  background: url('../img/footer/location.svg') center/cover no-repeat;
-}
-
-.address__phone::before {
-  background: url('../img/footer/phone-call.svg') center/cover no-repeat;
-}
-
-.address__email::before {
-  width: 36px;
-  margin-right: 26px;
-  background: url('../img/footer/envelope.svg') center/cover no-repeat;
+.address__email {
+  column-gap: 24px;
 }
 
 .footer__map {
@@ -194,12 +175,18 @@
     row-gap: 40px;
   }
 
-  .address__location::before,
-  .address__phone::before,
-  .address__email::before {
+  .address__info {
+    column-gap: 14px;
+  }
+
+  .address__location,
+  .address__email {
+    column-gap: 13px;
+  }
+
+  .address__icon {
     width: 26px;
     height: 26px;
-    margin-right: 14px;
   }
 
   .social-list__link {
@@ -235,8 +222,16 @@
     align-items: center;
   }
 
+  .address__location {
+    display: inline;
+  }
+
   .address__info {
     text-align: center;
+  }
+
+  .address__icon {
+    display: inline;
   }
 
   .footer__map {
@@ -273,9 +268,7 @@
     row-gap: 10px;
   }
 
-  .address__location::before,
-  .address__phone::before,
-  .address__email::before {
+  .address__icon {
     width: 20px;
     height: 20px;
   }

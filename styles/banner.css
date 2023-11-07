@@ -47,7 +47,7 @@
 .banner__img-container {
   position: relative;
   max-width: 100%;
-  padding-top: 52.084%;
+  padding-top: 750px;
 }
 
 .banner__img {
@@ -97,6 +97,10 @@
   .banner {
     padding-top: 20px;
   }
+
+  .banner__img-container {
+    padding-top: 534px;
+  }
 }
 
 @media (max-width: 920px) {
@@ -107,6 +111,10 @@
   .banner__btn-back {
     font-size: 16px;
     line-height: 1.75;
+  }
+
+  .banner__img-container {
+    padding-top: 402px;
   }
 
   .banner__text {
@@ -131,6 +139,10 @@
 
   .banner__btn-arrow {
     width: 16px;
+  }
+
+  .banner__img-container {
+    padding-top: 168px;
   }
 
   .banner__text {
