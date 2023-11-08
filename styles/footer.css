@@ -63,6 +63,11 @@
   column-gap: 24px;
 }
 
+.address__location-text {
+  display: inline-block;
+  max-width: 180px;
+}
+
 .footer__map {
   width: 57.6%;
 }
@@ -222,10 +227,6 @@
     align-items: center;
   }
 
-  .address__location {
-    display: inline;
-  }
-
   .address__info {
     text-align: center;
   }
@@ -262,6 +263,10 @@
   .address__info {
     font-size: 14px;
     line-height: 1.28;
+  }
+
+  .address__location-text {
+    max-width: 100px;
   }
 
   .address__link {
