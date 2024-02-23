@@ -130,25 +130,35 @@
     line-height: 1.2;
   }
 
-  .faq__item-title:nth-child(even) {
+  .faq__item:nth-child(even) .faq__item-title {
     color: #1c1f1a;
     background-color: #fff;
   }
 
-  .faq__item-title:nth-child(even)::after {
+  .faq__item:nth-child(even) .faq__item-title::after {
     background-image: url('../img/faq/open-purple.svg');
   }
 
-  .faq__item-title:nth-child(even):hover::after {
+  .faq__item:nth-child(even) .faq__item-title:hover::after {
     background-image: url('../img/faq/open-purple-hover.svg');
   }
 
-  .faq__item-title:nth-child(even):active::after {
+  .faq__item:nth-child(even) .faq__item-title:active::after {
     background-image: url('../img/faq/close-purple.svg');
   }
 
-  .faq__item-title:last-child {
+  .item_active.faq__item:nth-child(even) .faq__item-title::after {
+    background-image: url('../img/faq/close-purple.svg');
+  }
+
+  .faq__item:last-child {
     display: none;
+  }
+
+  .faq__text {
+    padding: 30px 25px 50px;
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 
@@ -169,6 +179,12 @@
 
   .faq__item-title::after {
     left: 84%;
+  }
+
+  .faq__text {
+    padding: 30px 54px 50px;
+    font-size: 18px;
+    line-height: 1.33;
   }
 }
 
@@ -194,5 +210,10 @@
   .faq__item-title::after {
     width: 30px;
     height: 30px;
+  }
+
+  .faq__text {
+    padding: 7px 43px 7px 10px;
+    font-size: 12px;
   }
 }
