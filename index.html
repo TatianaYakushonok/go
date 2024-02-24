@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/svg+xml" href="img/favicon/logo.svg">
   <link rel="stylesheet" href="styles/index.css">
+  <script type="module" src="./js/script.js"></script>
   <title>Document</title>
 </head>
 
@@ -87,7 +88,7 @@
           </li>
           <li class="recreation__item recreation__item_audio">
             <p class="recreation__figcaption">
-              Аудио-система 5.1 <br> с отличным звуком
+              Аудио-система 5.1 с отличным звуком
             </p>
           </li>
           <li class="recreation__item recreation__item_micro">
@@ -454,23 +455,68 @@
       <div class="container">
         <h2 class="section__title faq__title">Частые вопросы</h2>
 
-        <div class="faq__list-btn">
-          <button class="faq__btn" type="button">
-            Можно ли забронировать комнату онлайн?
-          </button>
-          <button class="faq__btn" type="button">
-            Могут ли мне вернуть деньги за бронь?
-          </button>
-          <button class="faq__btn" type="button">
-            Какая комната самая популярная?
-          </button>
-          <button class="faq__btn" type="button">
-            Как получить VIP карту?
-          </button>
-          <button class="faq__btn" type="button">
-            Какая комната самая популярная?
-          </button>
-        </div>
+        <ul class="faq__list">
+          <li class="faq__item">
+            <button class="faq__item-title" type="button">
+              Можно ли забронировать комнату онлайн?
+            </button>
+            <div class="faq__text-wrapper">
+              <p class="faq__text">Да, забронировать комнату вы можете онлайн,
+                заполнив форму на нашем сайте. Также вы можете забронировать
+                комнату позвонив по телефону <span class="faq__phone">8 (999)
+                  958 - 48 - 38</span>
+              </p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <button class="faq__item-title" type="button">
+              Могут ли мне вернуть деньги за бронь?
+            </button>
+            <div class="faq__text-wrapper">
+              <p class="faq__text">Да, забронировать комнату вы можете онлайн,
+                заполнив форму на нашем сайте. Также вы можете забронировать
+                комнату позвонив по телефону <span class="faq__phone">8 (999)
+                  958 - 48 - 38</span>
+              </p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <button class="faq__item-title" type="button">
+              Какая комната самая популярная?
+            </button>
+            <div class="faq__text-wrapper">
+              <p class="faq__text">Да, забронировать комнату вы можете онлайн,
+                заполнив форму на нашем сайте. Также вы можете забронировать
+                комнату позвонив по телефону <span class="faq__phone">8 (999)
+                  958 - 48 - 38</span>
+              </p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <button class="faq__item-title" type="button">
+              Как получить VIP карту?
+            </button>
+            <div class="faq__text-wrapper">
+              <p class="faq__text">Да, забронировать комнату вы можете онлайн,
+                заполнив форму на нашем сайте. Также вы можете забронировать
+                комнату позвонив по телефону <span class="faq__phone">8 (999)
+                  958 - 48 - 38</span>
+              </p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <button class="faq__item-title" type="button">
+              Какая комната самая популярная?
+            </button>
+            <div class="faq__text-wrapper">
+              <p class="faq__text">Да, забронировать комнату вы можете онлайн,
+                заполнив форму на нашем сайте. Также вы можете забронировать
+                комнату позвонив по телефону <span class="faq__phone">8 (999)
+                  958 - 48 - 38</span>
+              </p>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
@@ -493,7 +539,9 @@
                 fill="#CD06FF" />
             </svg>
 
-            г. Москва <br> ул. Усачёва, 29 к3
+            <span class="address__location-text">
+              г. Москва ул. Усачёва, 29 к3
+            </span>
           </p>
 
           <div class="address__link">
@@ -590,6 +638,34 @@
 
     </div>
   </footer>
+
+  <div class="modal overlay">
+    <div class="modal__main">
+      <h1 class="modal__title">Заказать звонок</h1>
+
+      <form class="form modal__form" action="#">
+        <div class="form__container-name">
+          <label class="form__label" for="username">
+            Имя
+          </label>
+          <input class="form__input" type="text" name="name" id="username"
+            required>
+        </div>
+        <div class="form__container-phone">
+          <label class="form__label" for="userphone">
+            Телефон
+          </label>
+          <input class="form__input" type="tel" name="phone" id="userphone"
+            title="+7___-___-__-__"
+            pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
+            required>
+        </div>
+
+        <button class="form__btn" type="submit">Позвонить мне</button>
+        <button class="form__btn_close" type="button"></button>
+      </form>
+    </div>
+  </div>
 
   <script>
     document.addEventListener('click', event => {

@@ -1,4 +1,4 @@
-.faq__list-btn {
+.faq__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,7 +13,14 @@
   margin-bottom: 48px;
 }
 
-.faq__btn {
+.faq__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq__item-title {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,12 +36,12 @@
   background-color: #fff;
 }
 
-.faq__btn:nth-child(even) {
+.faq__item:nth-child(even) .faq__item-title {
   color: #fff;
   background-color: var(--bg-section);
 }
 
-.faq__btn::after {
+.faq__item-title::after {
   position: absolute;
   top: 50%;
   left: 90%;
@@ -54,28 +61,58 @@
   transition: background-image 0.3s ease-in-out;
 }
 
-.faq__btn:nth-child(odd)::after {
+.faq__item:nth-child(odd) .faq__item-title::after {
   background-image: url('../img/faq/open-purple.svg');
 }
 
-.faq__btn:nth-child(odd):hover::after {
+.faq__item:nth-child(odd) .faq__item-title:hover::after {
   background-image: url('../img/faq/open-purple-hover.svg');
 }
 
-.faq__btn:nth-child(odd):active::after {
+.faq__item:nth-child(odd) .faq__item-title:active::after {
   background-image: url('../img/faq/close-purple.svg');
 }
 
-.faq__btn:nth-child(even)::after {
+.item_active.faq__item:nth-child(odd) .faq__item-title::after {
+  background-image: url('../img/faq/close-purple.svg');
+}
+
+.faq__item:nth-child(even) .faq__item-title::after {
   background-image: url('../img/faq/open.svg');
 }
 
-.faq__btn:nth-child(even):hover::after {
+.faq__item:nth-child(even) .faq__item-title:hover::after {
   background-image: url('../img/faq/open-hover.svg');
 }
 
-.faq__btn:nth-child(even):active::after {
+.faq__item:nth-child(even) .faq__item-title:active::after {
   background-image: url('../img/faq/close.svg');
+}
+
+.item_active.faq__item:nth-child(even) .faq__item-title::after {
+  background-image: url('../img/faq/close.svg');
+}
+
+.faq__text-wrapper {
+  height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  transition: height 0.4s ease-in-out;
+}
+
+.item_active .faq__text-wrapper {
+  height: auto;
+}
+
+.faq__text {
+  padding: 57px 70px 100px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000;
+}
+
+.faq__phone {
+  font-weight: 700;
 }
 
 @media (max-width: 1200px) {
@@ -83,35 +120,45 @@
     margin-bottom: 26px;
   }
 
-  .faq__list-btn {
+  .faq__list {
     row-gap: 16px;
   }
 
-  .faq__btn {
+  .faq__item-title {
     padding: 23px 25px;
     font-size: 20px;
     line-height: 1.2;
   }
 
-  .faq__btn:nth-child(even) {
+  .faq__item:nth-child(even) .faq__item-title {
     color: #1c1f1a;
     background-color: #fff;
   }
 
-  .faq__btn:nth-child(even)::after {
+  .faq__item:nth-child(even) .faq__item-title::after {
     background-image: url('../img/faq/open-purple.svg');
   }
 
-  .faq__btn:nth-child(even):hover::after {
+  .faq__item:nth-child(even) .faq__item-title:hover::after {
     background-image: url('../img/faq/open-purple-hover.svg');
   }
 
-  .faq__btn:nth-child(even):active::after {
+  .faq__item:nth-child(even) .faq__item-title:active::after {
     background-image: url('../img/faq/close-purple.svg');
   }
 
-  .faq__btn:last-child {
+  .item_active.faq__item:nth-child(even) .faq__item-title::after {
+    background-image: url('../img/faq/close-purple.svg');
+  }
+
+  .faq__item:last-child {
     display: none;
+  }
+
+  .faq__text {
+    padding: 30px 25px 50px;
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 
@@ -124,14 +171,20 @@
     line-height: 26px;
   }
 
-  .faq__btn {
+  .faq__item-title {
     padding: 23px 54px;
     font-size: 18px;
     line-height: 1.33;
   }
 
-  .faq__btn::after {
+  .faq__item-title::after {
     left: 84%;
+  }
+
+  .faq__text {
+    padding: 30px 54px 50px;
+    font-size: 18px;
+    line-height: 1.33;
   }
 }
 
@@ -144,18 +197,23 @@
     margin-bottom: 15px;
   }
 
-  .faq__list-btn {
+  .faq__list {
     row-gap: 10px;
   }
 
-  .faq__btn {
+  .faq__item-title {
     min-height: 46px;
     padding: 7px 43px 7px 10px;
     font-size: 12px;
   }
 
-  .faq__btn::after {
+  .faq__item-title::after {
     width: 30px;
     height: 30px;
+  }
+
+  .faq__text {
+    padding: 7px 43px 7px 10px;
+    font-size: 12px;
   }
 }
