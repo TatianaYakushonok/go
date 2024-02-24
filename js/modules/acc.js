@@ -19,7 +19,7 @@ buttons.forEach((button, ind) => {
         )
           ? ''
           : `${heghtWrapper}px`;
-        items[i].classList.toggle('item_active');
+        items[i].classList.add('item_active');
       } else {
         items[i].classList.remove('item_active');
         textWrapper[i].style.height = '';
