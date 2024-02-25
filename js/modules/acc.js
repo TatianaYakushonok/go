@@ -11,9 +11,10 @@ textWrapper.forEach((elem) => {
 });
 
 buttons.forEach((button, ind) => {
-  button.addEventListener('click', () => {
+  button.addEventListener('click', ({ target }) => {
+    console.log(target === button);
     for (let i = 0; i < items.length; i += 1) {
-      if (ind === i) {
+      if (ind === i && target === button) {
         textWrapper[i].style.height = textWrapper[i].classList.contains(
           'item_active',
         )
