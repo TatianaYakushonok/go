@@ -9,6 +9,7 @@
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  z-index: 1001;
 }
 
 .modal__main {
@@ -121,4 +122,29 @@
 .modal__open {
   visibility: visible;
   opacity: 1;
+}
+
+@media (max-width: 520px) {
+  .overlay {
+    padding: 20px;
+  }
+
+  .modal__main {
+    max-width: 280px;
+    padding: 60px 19px 88px;
+  }
+
+  .modal__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .modal__form-btn {
+    padding: 12px 38px;
+  }
+
+  .form__btn_close {
+    width: 30px;
+    height: 30px;
+  }
 }

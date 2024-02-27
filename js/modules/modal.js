@@ -20,7 +20,7 @@ const scrollController = {
   },
 };
 
-export const modalControl = (btn, modal) => {
+export const modalControl = (btns, modal) => {
   const openModal = () => {
     modal.classList.add('modal__open');
     scrollController.disabledScroll();
@@ -31,7 +31,9 @@ export const modalControl = (btn, modal) => {
     scrollController.enabledScroll();
   };
 
-  btn.addEventListener('click', openModal);
+  btns.forEach((btn) => {
+    btn.addEventListener('click', openModal);
+  });
 
   modal.addEventListener('click', ({ target }) => {
     if (target.closest('.form__btn_close') || target === modal) {

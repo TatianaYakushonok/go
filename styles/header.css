@@ -14,11 +14,16 @@
   align-items: center;
 }
 
+.header__logo {
+  z-index: 1000;
+}
+
 .header__burger {
   position: relative;
   display: none;
   width: 54px;
   height: 29px;
+  z-index: 1000;
 }
 
 .header__burger-line {
@@ -27,9 +32,9 @@
   height: 5px;
   border-radius: 8px;
   background-color: var(--color-btn-hover);
-  -webkit-transition: background-color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color, transform 0.5s ease-in-out;
+  -o-transition: background-color, transform 0.5s ease-in-out;
+  transition: background-color, transform 0.5s ease-in-out;
 }
 
 .header__burger-line::before,
@@ -41,9 +46,9 @@
   height: 5px;
   border-radius: 8px;
   background-color: var(--color-btn-hover);
-  -webkit-transition: background-color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color, transform 0.5s ease-in-out;
+  -o-transition: background-color, transform 0.5s ease-in-out;
+  transition: background-color, transform 0.5s ease-in-out;
 }
 
 .header__burger-line::before {
@@ -54,6 +59,18 @@
 .header__burger-line::after {
   bottom: 0;
   width: 50%;
+}
+
+.header__burger.close .header__burger-line {
+  transform: rotate(-45deg);
+}
+
+.header__burger.close .header__burger-line::before {
+  transform: rotate(90deg);
+}
+
+.header__burger.close .header__burger-line::after {
+  visibility: hidden;
 }
 
 .header__burger:hover .header__burger-line,
@@ -93,6 +110,7 @@
   -webkit-transition: background-color, border-color 0.3s ease-in-out;
   -o-transition: background-color, border-color 0.3s ease-in-out;
   transition: background-color, border-color 0.3s ease-in-out;
+  z-index: 1000;
 }
 
 .header__btn:hover,
@@ -151,6 +169,14 @@
     height: 42px;
   }
 
+  .header__btn {
+    padding: 11px 23px 12px;
+    font-size: 14px;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 520px) {
   .header__btn {
     display: none;
   }
