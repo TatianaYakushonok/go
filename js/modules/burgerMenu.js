@@ -30,6 +30,7 @@ const getBurgerMenu = () => {
         menu.classList.remove('active');
         burger.classList.remove('close');
         overlay.classList.remove('active');
+        document.body.style.overflowY = 'scroll';
       }
     });
   });
