@@ -15,12 +15,10 @@ buttons.forEach((button, ind) => {
     console.log(target === button);
     for (let i = 0; i < items.length; i += 1) {
       if (ind === i && target === button) {
-        textWrapper[i].style.height = textWrapper[i].classList.contains(
-          'item_active',
-        )
+        textWrapper[i].style.height = items[i].classList.contains('item_active')
           ? ''
           : `${heghtWrapper}px`;
-        items[i].classList.add('item_active');
+        items[i].classList.toggle('item_active');
       } else {
         items[i].classList.remove('item_active');
         textWrapper[i].style.height = '';
